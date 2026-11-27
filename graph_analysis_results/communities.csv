@@ -1,0 +1,47 @@
+skill,skill_label,community_id,community_label
+aws,AWS,1,Community 1
+azure,Azure,1,Community 1
+bash/shell,Bash/Shell,1,Community 1
+c#,C#,1,Community 1
+c++,C++,1,Community 1
+ci/cd,CI/CD,1,Community 1
+docker,Docker,1,Community 1
+gcp,GCP,1,Community 1
+git,Git,1,Community 1
+go,Go,1,Community 1
+java,Java,1,Community 1
+javascript,JavaScript,1,Community 1
+kubernetes,Kubernetes,1,Community 1
+linux,Linux,1,Community 1
+mongodb,MongoDB,1,Community 1
+mysql,MySQL,1,Community 1
+postgresql,PostgreSQL,1,Community 1
+redis,Redis,1,Community 1
+rust,Rust,1,Community 1
+terraform,Terraform,1,Community 1
+typescript,TypeScript,1,Community 1
+airflow,Airflow,2,Community 2
+apache spark,Apache Spark,2,Community 2
+bigquery,BigQuery,2,Community 2
+databricks,Databricks,2,Community 2
+hadoop,Hadoop,2,Community 2
+looker,Looker,2,Community 2
+power bi,Power BI,2,Community 2
+python,Python,2,Community 2
+r,R,2,Community 2
+redshift,Redshift,2,Community 2
+scala,Scala,2,Community 2
+snowflake,Snowflake,2,Community 2
+sql,SQL,2,Community 2
+tableau,Tableau,2,Community 2
+computer vision,Computer Vision,3,Community 3
+hugging face,Hugging Face,3,Community 3
+keras,Keras,3,Community 3
+langchain,Langchain,3,Community 3
+llm / genai,LLM / GenAI,3,Community 3
+nlp,NLP,3,Community 3
+numpy,NumPy,3,Community 3
+pandas,Pandas,3,Community 3
+pytorch,PyTorch,3,Community 3
+scikit-learn,Scikit-Learn,3,Community 3
+tensorflow,TensorFlow,3,Community 3

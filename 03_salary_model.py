@@ -1,5 +1,5 @@
 """
-Phase 3: Salary Modeling Pipeline (src/05_salary_model.py)
+Phase 3: Salary Modeling Pipeline (03_salary_model.py)
 ----------------------------------------------------------
 Meets all Phase 3 requirements:
   1. Joins exploded skills (Datasets/job_skills_clean.csv) with job metadata &
@@ -21,6 +21,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import statsmodels.api as sm
+import re
 
 # ==============================================================================
 # 1. CONFIGURATION
@@ -28,8 +29,8 @@ import statsmodels.api as sm
 CONFIG = {
     "skills_file": Path("Datasets/job_skills_clean.csv"),
     "jobs_file": Path("Datasets/combined_data.csv"),
-    "regression_dir": Path("results/regression"),
-    "figures_dir": Path("results/figures"),
+    "regression_dir": Path("salary_model_results/regression"),
+    "figures_dir": Path("salary_model_results/figures"),
     # Sample filtering & outlier handling
     "target_currency": "USD",
     "hourly_min": 15.0,
@@ -56,11 +57,22 @@ def load_merged_dataset(config: dict) -> tuple[pd.DataFrame, list[str]]:
         f"and {len(skills_long):,} skill rows from {config['skills_file']}"
     )
 
-    skills_long["skill_clean"] = (
+    # Preserve distinct languages before removing punctuation.
+    skill_labels = (
         skills_long["skill"]
+        .fillna("")
         .astype(str)
         .str.strip()
         .str.lower()
+    )
+
+    skill_labels = skill_labels.replace({
+        "c++": "cpp",
+        "c#": "csharp",
+    })
+
+    skills_long["skill_clean"] = (
+        skill_labels
         .str.replace(r"[^a-z0-9]+", "_", regex=True)
         .str.strip("_")
     )
@@ -86,6 +98,86 @@ def load_merged_dataset(config: dict) -> tuple[pd.DataFrame, list[str]]:
 # ==============================================================================
 # 3. SALARY SAMPLE PREPARATION (MISSING, HOURLY, CURRENCY, OUTLIERS, LOG)
 # ==============================================================================
+MIXED_SALARY_RANGE = re.compile(
+    r"(?:USD\s*|\$\s*)?"
+    r"(?P<low>\d[\d,]*(?:\.\d+)?)\s*"
+    r"(?:/|per\s+)\s*"
+    r"(?P<low_period>hours?|hrs?|years?|yrs?|months?|mos?|weeks?|wks?)"
+    r"\b\s*(?:to|[-–—])\s*"
+    r"(?:USD\s*|\$\s*)?"
+    r"(?P<high>\d[\d,]*(?:\.\d+)?)\s*"
+    r"(?:/|per\s+)\s*"
+    r"(?P<high_period>hours?|hrs?|years?|yrs?|months?|mos?|weeks?|wks?)"
+    r"\b",
+    flags=re.IGNORECASE,
+)
+
+
+def correct_mixed_period_salary(row):
+    """
+    Correct explicit mixed-period salary ranges in USD descriptions.
+
+    Returns:
+        annual salary, correction status
+
+    Unrecognised formats retain the existing salary.
+    Conflicting or invalid mixed-period ranges are excluded.
+    """
+    original_salary = row["annual_salary"]
+    description = row.get("description", "")
+    currency = str(row.get("currency", "")).strip().upper()
+
+    if currency != "USD" or not isinstance(description, str):
+        return original_salary, "unchanged"
+
+    def multiplier(period):
+        period = period.lower()
+
+        if period.startswith(("hour", "hr")):
+            return 2080
+        if period.startswith(("week", "wk")):
+            return 52
+        if period.startswith(("month", "mo")):
+            return 12
+        return 1  # Pattern permits only year/yr alternatives here.
+
+    annual_ranges = set()
+
+    for match in MIXED_SALARY_RANGE.finditer(description):
+        low_factor = multiplier(match.group("low_period"))
+        high_factor = multiplier(match.group("high_period"))
+
+        # Only intervene when the two bounds use different periods.
+        if low_factor == high_factor:
+            continue
+
+        low = float(match.group("low").replace(",", ""))
+        high = float(match.group("high").replace(",", ""))
+
+        annual_low = low * low_factor
+        annual_high = high * high_factor
+
+        annual_ranges.add((annual_low, annual_high))
+
+    if not annual_ranges:
+        return original_salary, "unchanged"
+
+    # Repeated identical ranges are fine; different ranges are ambiguous.
+    if len(annual_ranges) != 1:
+        return np.nan, "excluded_multiple_mixed_ranges"
+
+    annual_low, annual_high = next(iter(annual_ranges))
+
+    if annual_low <= 0 or annual_high < annual_low:
+        return np.nan, "excluded_invalid_mixed_range"
+
+    corrected_salary = round(
+        (annual_low + annual_high) / 2,
+        2,
+    )
+
+    return corrected_salary, "corrected_mixed_period"
+
 def clean_salary_sample(df: pd.DataFrame, config: dict) -> pd.DataFrame:
     data = df.copy()
     initial_n = len(data)
@@ -95,8 +187,55 @@ def clean_salary_sample(df: pd.DataFrame, config: dict) -> pd.DataFrame:
         data = data[data["currency"].astype(str).str.upper() == config["target_currency"]].copy()
     after_currency_n = len(data)
 
-    # 2. Drop missing salaries
-    data["annual_salary"] = pd.to_numeric(data["annual_salary"], errors="coerce")
+    # 2. Correct explicit mixed-period salaries before dropping
+    # missing values or applying salary bounds.
+    data["annual_salary"] = pd.to_numeric(
+        data["annual_salary"],
+        errors="coerce",
+    )
+
+    data["annual_salary_before_correction"] = data["annual_salary"]
+
+    corrections = data.apply(
+        correct_mixed_period_salary,
+        axis=1,
+        result_type="expand",
+    )
+
+    corrections.columns = [
+        "annual_salary",
+        "salary_correction_status",
+    ]
+
+    data["annual_salary"] = corrections["annual_salary"]
+    data["salary_correction_status"] = corrections[
+        "salary_correction_status"
+    ]
+
+    # Save a record of corrections and exclusions.
+    changed = data["salary_correction_status"].ne("unchanged")
+
+    audit_columns = [
+        "job_uid",
+        "title",
+        "annual_salary_before_correction",
+        "annual_salary",
+        "salary_correction_status",
+    ]
+
+    audit = data.loc[changed, audit_columns].copy()
+
+    config["regression_dir"].mkdir(parents=True, exist_ok=True)
+
+    audit.to_csv(
+        config["regression_dir"] / "salary_corrections.csv",
+        index=False,
+    )
+
+    print("\nMixed-period salary handling:")
+    print(data["salary_correction_status"].value_counts().to_string())
+
+    # Drop missing or explicitly excluded salaries after correction.
     data = data.dropna(subset=["annual_salary"]).copy()
     after_missing_n = len(data)
 
@@ -152,16 +291,79 @@ def prepare_features(
         f"dropped {len(all_skill_cols) - len(kept_skills)} rare skills"
     )
 
-    t = data["title"].astype(str).str.lower()
+    t = (
+        data["title"]
+        .fillna("")
+        .astype(str)
+        .str.lower()
+        .str.replace(r"[-_/]+", " ", regex=True)
+    )
+
+    # Specific roles are checked before broader engineering roles.
+    bi_role = t.str.contains(
+        r"\bbi\b|\bbusiness intelligence\b|\btableau\b|"
+        r"\bpower\s*bi\b|\breporting analyst\b",
+        regex=True,
+        na=False,
+    )
+
+    science_role = t.str.contains(
+        r"\bdata scien(?:ce|tist|tists)\b|"
+        r"\bapplied scientist\b|\bresearch scientist\b|"
+        r"\bmachine learning\b|\bdeep learning\b|"
+        r"\bai\b|\bml\b|\bartificial intelligence\b|"
+        r"\bcomputer vision\b|\bnlp\b",
+        regex=True,
+        na=False,
+    )
+
+    data_engineering_role = t.str.contains(
+        r"\bdata engineer(?:ing)?\b|"
+        r"\banalytics engineer(?:ing)?\b|"
+        r"\bdata architect\b|\bdatabase\b|"
+        r"\betl\b|\bdata pipeline\b|\bdbt\b",
+        regex=True,
+        na=False,
+    )
+
+    product_marketing_role = t.str.contains(
+        r"\bproduct\b|\bgrowth\b|\bmarketing\b|"
+        r"\bweb\b|\bdigital\b",
+        regex=True,
+        na=False,
+    )
+
+    analyst_role = t.str.contains(
+        r"\bdata analyst\b|\bbusiness analyst\b|"
+        r"\banalytics analyst\b",
+        regex=True,
+        na=False,
+    )
+
+    other_engineering_role = t.str.contains(
+        r"\bengineer(?:ing)?\b|\bdeveloper\b|\barchitect\b",
+        regex=True,
+        na=False,
+    )
+
     data["role_category"] = np.select(
         [
-            t.str.contains("scien|ml|machine learning|ai|computer vision|nlp"),
-            t.str.contains("engineer|architect|etl|pipeline|dbt"),
-            t.str.contains("product|growth|marketing|web|digital"),
-            t.str.contains("bi|business intelligence|tableau|power bi"),
+            bi_role,
+            science_role,
+            data_engineering_role,
+            product_marketing_role,
+            analyst_role,
+            other_engineering_role,
         ],
-        ["Data Science / ML", "Data / Analytics Eng", "Web / Marketing / Product", "BI / Reporting"],
-        default="General Data Analyst",
+        [
+            "BI / Reporting",
+            "Data Science / ML",
+            "Data / Analytics Eng",
+            "Web / Marketing / Product",
+            "General Data Analyst",
+            "Other Engineering",
+        ],
+        default="Other / Unclassified",
     )
 
     active_controls = []
@@ -194,8 +396,25 @@ def run_regression_analysis(
     conf_int = model_full.conf_int(alpha=config["alpha"])
     rows = []
     for col in skill_cols:
-        raw_label = col.replace("skill_", "").replace("_", " ")
-        clean_name = raw_label.upper() if len(raw_label) <= 4 else raw_label.title()
+        skill_key = col.removeprefix("skill_")
+
+        display_names = {
+            "cpp": "C++",
+            "csharp": "C#",
+            "ci_cd": "CI/CD",
+            "llm_genai": "LLM / GenAI",
+            "power_bi": "Power BI",
+            "pytorch": "PyTorch",
+            "tensorflow": "TensorFlow",
+            "scikit_learn": "Scikit-Learn",
+        }
+
+        raw_label = skill_key.replace("_", " ")
+
+        clean_name = display_names.get(
+            skill_key,
+            raw_label.upper() if len(raw_label) <= 4 else raw_label.title()
+        )
 
         has_skill = df[col] == 1
         n_with = int(has_skill.sum())
@@ -384,7 +603,10 @@ def main():
     merged_df, all_skill_cols = load_merged_dataset(CONFIG)
     clean_df = clean_salary_sample(merged_df, CONFIG)
     feat_df, kept_skills, control_dummies = prepare_features(clean_df, all_skill_cols, CONFIG)
-
+    feat_df.to_csv(
+        CONFIG["regression_dir"] / "salary_analysis_sample.csv",
+        index=False,
+    )
     coef_df, metrics_df, summary_txt = run_regression_analysis(
         feat_df, kept_skills, control_dummies, CONFIG
     )

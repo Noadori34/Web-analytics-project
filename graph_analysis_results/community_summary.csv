@@ -1,0 +1,4 @@
+community_id,community_label,number_of_skills,jobs_mentioning_any_member,share_of_all_jobs_pct,top_skills,all_skills
+1,Community 1,21,3630,52.84612025040035,"AWS, Azure, CI/CD, GCP, Java, Kubernetes, Git, C++","AWS, Azure, CI/CD, GCP, Java, Kubernetes, Git, C++, Linux, JavaScript, Docker, TypeScript, Terraform, PostgreSQL, C#, Bash/Shell, Rust, Go, MySQL, MongoDB, Redis"
+2,Community 2,14,4509,65.64274275731547,"Python, SQL, Apache Spark, R, Tableau, Power BI, Scala, Snowflake","Python, SQL, Apache Spark, R, Tableau, Power BI, Scala, Snowflake, Databricks, Airflow, BigQuery, Looker, Hadoop, Redshift"
+3,Community 3,11,2163,31.489299752511283,"LLM / GenAI, TensorFlow, PyTorch, NLP, Computer Vision, Langchain, Scikit-Learn, Pandas","LLM / GenAI, TensorFlow, PyTorch, NLP, Computer Vision, Langchain, Scikit-Learn, Pandas, Hugging Face, NumPy, Keras"

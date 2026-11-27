@@ -1,0 +1,5546 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d14" for="edge" attr.name="distance" attr.type="double"/>
+<key id="d13" for="edge" attr.name="jaccard" attr.type="double"/>
+<key id="d12" for="edge" attr.name="weight" attr.type="long"/>
+<key id="d11" for="node" attr.name="community_label" attr.type="string"/>
+<key id="d10" for="node" attr.name="community_id" attr.type="long"/>
+<key id="d9" for="node" attr.name="betweenness" attr.type="double"/>
+<key id="d8" for="node" attr.name="pagerank" attr.type="double"/>
+<key id="d7" for="node" attr.name="weighted_degree" attr.type="long"/>
+<key id="d6" for="node" attr.name="degree_centrality" attr.type="double"/>
+<key id="d5" for="node" attr.name="degree" attr.type="long"/>
+<key id="d4" for="node" attr.name="demand_pct" attr.type="double"/>
+<key id="d3" for="node" attr.name="job_count" attr.type="long"/>
+<key id="d2" for="node" attr.name="label" attr.type="string"/>
+<key id="d1" for="graph" attr.name="total_jobs" attr.type="long"/>
+<key id="d0" for="graph" attr.name="sample" attr.type="string"/>
+<graph edgedefault="undirected"><data key="d0">full_corrected_skill_sample</data>
+<data key="d1">6869</data>
+<node id="airflow">
+  <data key="d2">Airflow</data>
+  <data key="d3">338</data>
+  <data key="d4">4.920658028825157</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">2761</data>
+  <data key="d8">0.018503977636634535</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="apache spark">
+  <data key="d2">Apache Spark</data>
+  <data key="d3">877</data>
+  <data key="d4">12.767506187217936</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">6377</data>
+  <data key="d8">0.03838021869587203</data>
+  <data key="d9">0.00101010101010101</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="aws">
+  <data key="d2">AWS</data>
+  <data key="d3">1252</data>
+  <data key="d4">18.22681613044111</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">7815</data>
+  <data key="d8">0.04660142361983159</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="azure">
+  <data key="d2">Azure</data>
+  <data key="d3">1143</data>
+  <data key="d4">16.639976706944243</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">7393</data>
+  <data key="d8">0.04389496686608823</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="bash/shell">
+  <data key="d2">Bash/Shell</data>
+  <data key="d3">241</data>
+  <data key="d4">3.508516523511428</data>
+  <data key="d5">42</data>
+  <data key="d6">0.9333333333333333</data>
+  <data key="d7">1201</data>
+  <data key="d8">0.009841631006044783</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="bigquery">
+  <data key="d2">BigQuery</data>
+  <data key="d3">255</data>
+  <data key="d4">3.71233076139176</data>
+  <data key="d5">44</data>
+  <data key="d6">0.9777777777777779</data>
+  <data key="d7">1778</data>
+  <data key="d8">0.013070121608668918</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="c#">
+  <data key="d2">C#</data>
+  <data key="d3">246</data>
+  <data key="d4">3.581307322754404</data>
+  <data key="d5">44</data>
+  <data key="d6">0.9777777777777779</data>
+  <data key="d7">1691</data>
+  <data key="d8">0.012603744111768565</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="c++">
+  <data key="d2">C++</data>
+  <data key="d3">666</data>
+  <data key="d4">9.695734459164361</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">2580</data>
+  <data key="d8">0.017997208414192903</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="ci/cd">
+  <data key="d2">CI/CD</data>
+  <data key="d3">1048</data>
+  <data key="d4">15.256951521327704</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">6585</data>
+  <data key="d8">0.039797362173809865</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="computer vision">
+  <data key="d2">Computer Vision</data>
+  <data key="d3">205</data>
+  <data key="d4">2.9844227689620033</data>
+  <data key="d5">39</data>
+  <data key="d6">0.8666666666666667</data>
+  <data key="d7">959</data>
+  <data key="d8">0.008579412050358021</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="databricks">
+  <data key="d2">Databricks</data>
+  <data key="d3">464</data>
+  <data key="d4">6.754986169748144</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">2976</data>
+  <data key="d8">0.019388709530112742</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="docker">
+  <data key="d2">Docker</data>
+  <data key="d3">468</data>
+  <data key="d4">6.8132188091425245</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">3714</data>
+  <data key="d8">0.023975773319902333</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="gcp">
+  <data key="d2">GCP</data>
+  <data key="d3">1020</data>
+  <data key="d4">14.84932304556704</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">7018</data>
+  <data key="d8">0.04202693070050076</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="git">
+  <data key="d2">Git</data>
+  <data key="d3">690</data>
+  <data key="d4">10.045130295530646</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">4188</data>
+  <data key="d8">0.02642642951229804</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="go">
+  <data key="d2">Go</data>
+  <data key="d3">107</data>
+  <data key="d4">1.5577231037996797</data>
+  <data key="d5">35</data>
+  <data key="d6">0.7777777777777778</data>
+  <data key="d7">599</data>
+  <data key="d8">0.006597303146110387</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="hadoop">
+  <data key="d2">Hadoop</data>
+  <data key="d3">155</data>
+  <data key="d4">2.256514776532246</data>
+  <data key="d5">43</data>
+  <data key="d6">0.9555555555555556</data>
+  <data key="d7">1273</data>
+  <data key="d8">0.010206888845672748</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="hugging face">
+  <data key="d2">Hugging Face</data>
+  <data key="d3">110</data>
+  <data key="d4">1.6013975833454652</data>
+  <data key="d5">43</data>
+  <data key="d6">0.9555555555555556</data>
+  <data key="d7">975</data>
+  <data key="d8">0.008756650940557983</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="java">
+  <data key="d2">Java</data>
+  <data key="d3">833</data>
+  <data key="d4">12.12694715387975</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">5296</data>
+  <data key="d8">0.03261373996602476</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="javascript">
+  <data key="d2">JavaScript</data>
+  <data key="d3">526</data>
+  <data key="d4">7.657592080361042</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">3082</data>
+  <data key="d8">0.02031919853598728</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="keras">
+  <data key="d2">Keras</data>
+  <data key="d3">37</data>
+  <data key="d4">0.5386519143980201</data>
+  <data key="d5">35</data>
+  <data key="d6">0.7777777777777778</data>
+  <data key="d7">397</data>
+  <data key="d8">0.005489067498774398</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="kubernetes">
+  <data key="d2">Kubernetes</data>
+  <data key="d3">691</data>
+  <data key="d4">10.05968845537924</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">4779</data>
+  <data key="d8">0.029944000988444193</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="langchain">
+  <data key="d2">Langchain</data>
+  <data key="d3">152</data>
+  <data key="d4">2.212840296986461</data>
+  <data key="d5">43</data>
+  <data key="d6">0.9555555555555556</data>
+  <data key="d7">1245</data>
+  <data key="d8">0.010103906866194765</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="linux">
+  <data key="d2">Linux</data>
+  <data key="d3">559</data>
+  <data key="d4">8.138011355364682</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">2601</data>
+  <data key="d8">0.01784441462442227</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="llm / genai">
+  <data key="d2">LLM / GenAI</data>
+  <data key="d3">1721</data>
+  <data key="d4">25.054593099432232</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">7986</data>
+  <data key="d8">0.04773660020982044</data>
+  <data key="d9">0.044444444444444446</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="looker">
+  <data key="d2">Looker</data>
+  <data key="d3">237</data>
+  <data key="d4">3.450283884117048</data>
+  <data key="d5">38</data>
+  <data key="d6">0.8444444444444444</data>
+  <data key="d7">1122</data>
+  <data key="d8">0.009374626890751088</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="mongodb">
+  <data key="d2">MongoDB</data>
+  <data key="d3">78</data>
+  <data key="d4">1.1355364681904208</data>
+  <data key="d5">40</data>
+  <data key="d6">0.888888888888889</data>
+  <data key="d7">543</data>
+  <data key="d8">0.006346199433669737</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="mysql">
+  <data key="d2">MySQL</data>
+  <data key="d3">104</data>
+  <data key="d4">1.5140486242538944</data>
+  <data key="d5">42</data>
+  <data key="d6">0.9333333333333333</data>
+  <data key="d7">757</data>
+  <data key="d8">0.007576028782636053</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="nlp">
+  <data key="d2">NLP</data>
+  <data key="d3">355</data>
+  <data key="d4">5.168146746251274</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">2294</data>
+  <data key="d8">0.01600400332452045</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="numpy">
+  <data key="d2">NumPy</data>
+  <data key="d3">93</data>
+  <data key="d4">1.353908865919348</data>
+  <data key="d5">41</data>
+  <data key="d6">0.9111111111111111</data>
+  <data key="d7">777</data>
+  <data key="d8">0.0077347684011254214</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="pandas">
+  <data key="d2">Pandas</data>
+  <data key="d3">148</data>
+  <data key="d4">2.1546076575920803</data>
+  <data key="d5">44</data>
+  <data key="d6">0.9777777777777779</data>
+  <data key="d7">1243</data>
+  <data key="d8">0.010488751409700991</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="postgresql">
+  <data key="d2">PostgreSQL</data>
+  <data key="d3">323</data>
+  <data key="d4">4.702285631096229</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">2315</data>
+  <data key="d8">0.01650646310721712</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="power bi">
+  <data key="d2">Power BI</data>
+  <data key="d3">654</data>
+  <data key="d4">9.52103654098122</data>
+  <data key="d5">42</data>
+  <data key="d6">0.9333333333333333</data>
+  <data key="d7">2771</data>
+  <data key="d8">0.018382386803092773</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="python">
+  <data key="d2">Python</data>
+  <data key="d3">3304</data>
+  <data key="d4">48.10016013975834</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">16107</data>
+  <data key="d8">0.09374872860012474</data>
+  <data key="d9">0.8777777777777778</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="pytorch">
+  <data key="d2">PyTorch</data>
+  <data key="d3">481</data>
+  <data key="d4">7.0024748871742615</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">3292</data>
+  <data key="d8">0.022130225621571083</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="r">
+  <data key="d2">R</data>
+  <data key="d3">665</data>
+  <data key="d4">9.681176299315766</data>
+  <data key="d5">41</data>
+  <data key="d6">0.9111111111111111</data>
+  <data key="d7">3719</data>
+  <data key="d8">0.023405545683996914</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="redis">
+  <data key="d2">Redis</data>
+  <data key="d3">74</data>
+  <data key="d4">1.0773038287960401</data>
+  <data key="d5">39</data>
+  <data key="d6">0.8666666666666667</data>
+  <data key="d7">488</data>
+  <data key="d8">0.00604665466221974</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="redshift">
+  <data key="d2">Redshift</data>
+  <data key="d3">106</data>
+  <data key="d4">1.5431649439510846</data>
+  <data key="d5">43</data>
+  <data key="d6">0.9555555555555556</data>
+  <data key="d7">831</data>
+  <data key="d8">0.007891489204142194</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="rust">
+  <data key="d2">Rust</data>
+  <data key="d3">124</data>
+  <data key="d4">1.805211821225797</data>
+  <data key="d5">41</data>
+  <data key="d6">0.9111111111111111</data>
+  <data key="d7">596</data>
+  <data key="d8">0.0065931516656185015</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="scala">
+  <data key="d2">Scala</data>
+  <data key="d3">534</data>
+  <data key="d4">7.774057359149803</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">4373</data>
+  <data key="d8">0.027146655196462095</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="scikit-learn">
+  <data key="d2">Scikit-Learn</data>
+  <data key="d3">150</data>
+  <data key="d4">2.1837239772892705</data>
+  <data key="d5">44</data>
+  <data key="d6">0.9777777777777779</data>
+  <data key="d7">1479</data>
+  <data key="d8">0.011773196947612084</data>
+  <data key="d9">0.0</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="snowflake">
+  <data key="d2">Snowflake</data>
+  <data key="d3">484</data>
+  <data key="d4">7.046149366720047</data>
+  <data key="d5">44</data>
+  <data key="d6">0.9777777777777779</data>
+  <data key="d7">2857</data>
+  <data key="d8">0.018937507274540993</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="sql">
+  <data key="d2">SQL</data>
+  <data key="d3">2432</data>
+  <data key="d4">35.40544475178338</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">11143</data>
+  <data key="d8">0.06515286500454018</data>
+  <data key="d9">0.21414141414141413</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="tableau">
+  <data key="d2">Tableau</data>
+  <data key="d3">657</data>
+  <data key="d4">9.564711020527005</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">2945</data>
+  <data key="d8">0.01950750957823369</data>
+  <data key="d9">0.0</data>
+  <data key="d10">2</data>
+  <data key="d11">Community 2</data>
+</node>
+<node id="tensorflow">
+  <data key="d2">TensorFlow</data>
+  <data key="d3">518</data>
+  <data key="d4">7.541126801572282</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">3907</data>
+  <data key="d8">0.025074807552368718</data>
+  <data key="d9">0.043434343434343436</data>
+  <data key="d10">3</data>
+  <data key="d11">Community 3</data>
+</node>
+<node id="terraform">
+  <data key="d2">Terraform</data>
+  <data key="d3">333</data>
+  <data key="d4">4.847867229582181</data>
+  <data key="d5">45</data>
+  <data key="d6">1.0</data>
+  <data key="d7">2293</data>
+  <data key="d8">0.015926510620092055</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<node id="typescript">
+  <data key="d2">TypeScript</data>
+  <data key="d3">384</data>
+  <data key="d4">5.590333381860533</data>
+  <data key="d5">43</data>
+  <data key="d6">0.9555555555555556</data>
+  <data key="d7">1853</data>
+  <data key="d8">0.013552243367670871</data>
+  <data key="d9">0.0</data>
+  <data key="d10">1</data>
+  <data key="d11">Community 1</data>
+</node>
+<edge source="airflow" target="apache spark">
+  <data key="d12">195</data>
+  <data key="d13">0.19117647058823528</data>
+  <data key="d14">0.005128205128205128</data>
+</edge>
+<edge source="airflow" target="aws">
+  <data key="d12">167</data>
+  <data key="d13">0.11735769501054111</data>
+  <data key="d14">0.005988023952095809</data>
+</edge>
+<edge source="airflow" target="azure">
+  <data key="d12">130</data>
+  <data key="d13">0.09622501850481126</data>
+  <data key="d14">0.007692307692307693</data>
+</edge>
+<edge source="airflow" target="bash/shell">
+  <data key="d12">9</data>
+  <data key="d13">0.015789473684210527</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="airflow" target="bigquery">
+  <data key="d12">62</data>
+  <data key="d13">0.1167608286252354</data>
+  <data key="d14">0.016129032258064516</data>
+</edge>
+<edge source="airflow" target="c#">
+  <data key="d12">10</data>
+  <data key="d13">0.017421602787456445</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="airflow" target="c++">
+  <data key="d12">19</data>
+  <data key="d13">0.019289340101522844</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="airflow" target="ci/cd">
+  <data key="d12">142</data>
+  <data key="d13">0.11414790996784566</data>
+  <data key="d14">0.007042253521126761</data>
+</edge>
+<edge source="airflow" target="computer vision">
+  <data key="d12">6</data>
+  <data key="d13">0.0111731843575419</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="airflow" target="databricks">
+  <data key="d12">68</data>
+  <data key="d13">0.09264305177111716</data>
+  <data key="d14">0.014705882352941176</data>
+</edge>
+<edge source="airflow" target="docker">
+  <data key="d12">62</data>
+  <data key="d13">0.08333333333333333</data>
+  <data key="d14">0.016129032258064516</data>
+</edge>
+<edge source="airflow" target="gcp">
+  <data key="d12">148</data>
+  <data key="d13">0.12231404958677686</data>
+  <data key="d14">0.006756756756756757</data>
+</edge>
+<edge source="airflow" target="git">
+  <data key="d12">77</data>
+  <data key="d13">0.08096740273396424</data>
+  <data key="d14">0.012987012987012988</data>
+</edge>
+<edge source="airflow" target="go">
+  <data key="d12">2</data>
+  <data key="d13">0.004514672686230248</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="airflow" target="hadoop">
+  <data key="d12">38</data>
+  <data key="d13">0.08351648351648351</data>
+  <data key="d14">0.02631578947368421</data>
+</edge>
+<edge source="airflow" target="hugging face">
+  <data key="d12">15</data>
+  <data key="d13">0.03464203233256351</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="airflow" target="java">
+  <data key="d12">86</data>
+  <data key="d13">0.0792626728110599</data>
+  <data key="d14">0.011627906976744186</data>
+</edge>
+<edge source="airflow" target="javascript">
+  <data key="d12">21</data>
+  <data key="d13">0.02491103202846975</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="airflow" target="keras">
+  <data key="d12">10</data>
+  <data key="d13">0.0273972602739726</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="airflow" target="kubernetes">
+  <data key="d12">86</data>
+  <data key="d13">0.0911983032873807</data>
+  <data key="d14">0.011627906976744186</data>
+</edge>
+<edge source="airflow" target="langchain">
+  <data key="d12">22</data>
+  <data key="d13">0.04700854700854701</data>
+  <data key="d14">0.045454545454545456</data>
+</edge>
+<edge source="airflow" target="linux">
+  <data key="d12">21</data>
+  <data key="d13">0.023972602739726026</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="airflow" target="llm / genai">
+  <data key="d12">129</data>
+  <data key="d13">0.06683937823834196</data>
+  <data key="d14">0.007751937984496124</data>
+</edge>
+<edge source="airflow" target="looker">
+  <data key="d12">23</data>
+  <data key="d13">0.041666666666666664</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="airflow" target="mongodb">
+  <data key="d12">4</data>
+  <data key="d13">0.009708737864077669</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="airflow" target="mysql">
+  <data key="d12">12</data>
+  <data key="d13">0.027906976744186046</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="airflow" target="nlp">
+  <data key="d12">40</data>
+  <data key="d13">0.06125574272588055</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="airflow" target="numpy">
+  <data key="d12">20</data>
+  <data key="d13">0.04866180048661801</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="airflow" target="pandas">
+  <data key="d12">26</data>
+  <data key="d13">0.05652173913043478</data>
+  <data key="d14">0.038461538461538464</data>
+</edge>
+<edge source="airflow" target="postgresql">
+  <data key="d12">33</data>
+  <data key="d13">0.052547770700636945</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="airflow" target="power bi">
+  <data key="d12">23</data>
+  <data key="d13">0.023735810113519093</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="airflow" target="python">
+  <data key="d12">285</data>
+  <data key="d13">0.08489722966934764</data>
+  <data key="d14">0.0035087719298245615</data>
+</edge>
+<edge source="airflow" target="pytorch">
+  <data key="d12">57</data>
+  <data key="d13">0.07480314960629922</data>
+  <data key="d14">0.017543859649122806</data>
+</edge>
+<edge source="airflow" target="r">
+  <data key="d12">38</data>
+  <data key="d13">0.039378238341968914</data>
+  <data key="d14">0.02631578947368421</data>
+</edge>
+<edge source="airflow" target="redis">
+  <data key="d12">15</data>
+  <data key="d13">0.037783375314861464</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="airflow" target="redshift">
+  <data key="d12">40</data>
+  <data key="d13">0.09900990099009901</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="airflow" target="rust">
+  <data key="d12">3</data>
+  <data key="d13">0.006535947712418301</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="airflow" target="scala">
+  <data key="d12">100</data>
+  <data key="d13">0.12953367875647667</data>
+  <data key="d14">0.01</data>
+</edge>
+<edge source="airflow" target="scikit-learn">
+  <data key="d12">30</data>
+  <data key="d13">0.06550218340611354</data>
+  <data key="d14">0.03333333333333333</data>
+</edge>
+<edge source="airflow" target="snowflake">
+  <data key="d12">102</data>
+  <data key="d13">0.14166666666666666</data>
+  <data key="d14">0.00980392156862745</data>
+</edge>
+<edge source="airflow" target="sql">
+  <data key="d12">248</data>
+  <data key="d13">0.09833465503568596</data>
+  <data key="d14">0.004032258064516129</data>
+</edge>
+<edge source="airflow" target="tableau">
+  <data key="d12">32</data>
+  <data key="d13">0.033229491173416406</data>
+  <data key="d14">0.03125</data>
+</edge>
+<edge source="airflow" target="tensorflow">
+  <data key="d12">53</data>
+  <data key="d13">0.0660024906600249</data>
+  <data key="d14">0.018867924528301886</data>
+</edge>
+<edge source="airflow" target="terraform">
+  <data key="d12">41</data>
+  <data key="d13">0.06507936507936508</data>
+  <data key="d14">0.024390243902439025</data>
+</edge>
+<edge source="airflow" target="typescript">
+  <data key="d12">11</data>
+  <data key="d13">0.015471167369901548</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="apache spark" target="aws">
+  <data key="d12">292</data>
+  <data key="d13">0.15895481763745237</data>
+  <data key="d14">0.003424657534246575</data>
+</edge>
+<edge source="apache spark" target="azure">
+  <data key="d12">307</data>
+  <data key="d13">0.17921774664331583</data>
+  <data key="d14">0.003257328990228013</data>
+</edge>
+<edge source="apache spark" target="bash/shell">
+  <data key="d12">18</data>
+  <data key="d13">0.016363636363636365</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="apache spark" target="bigquery">
+  <data key="d12">70</data>
+  <data key="d13">0.06591337099811675</data>
+  <data key="d14">0.014285714285714285</data>
+</edge>
+<edge source="apache spark" target="c#">
+  <data key="d12">23</data>
+  <data key="d13">0.02090909090909091</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="apache spark" target="c++">
+  <data key="d12">52</data>
+  <data key="d13">0.034875922199865864</data>
+  <data key="d14">0.019230769230769232</data>
+</edge>
+<edge source="apache spark" target="ci/cd">
+  <data key="d12">220</data>
+  <data key="d13">0.12903225806451613</data>
+  <data key="d14">0.004545454545454545</data>
+</edge>
+<edge source="apache spark" target="computer vision">
+  <data key="d12">27</data>
+  <data key="d13">0.025592417061611375</data>
+  <data key="d14">0.037037037037037035</data>
+</edge>
+<edge source="apache spark" target="databricks">
+  <data key="d12">207</data>
+  <data key="d13">0.18253968253968253</data>
+  <data key="d14">0.004830917874396135</data>
+</edge>
+<edge source="apache spark" target="docker">
+  <data key="d12">75</data>
+  <data key="d13">0.05905511811023622</data>
+  <data key="d14">0.013333333333333334</data>
+</edge>
+<edge source="apache spark" target="gcp">
+  <data key="d12">293</data>
+  <data key="d13">0.18266832917705736</data>
+  <data key="d14">0.0034129692832764505</data>
+</edge>
+<edge source="apache spark" target="git">
+  <data key="d12">119</data>
+  <data key="d13">0.08218232044198895</data>
+  <data key="d14">0.008403361344537815</data>
+</edge>
+<edge source="apache spark" target="go">
+  <data key="d12">4</data>
+  <data key="d13">0.004081632653061225</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="apache spark" target="hadoop">
+  <data key="d12">126</data>
+  <data key="d13">0.1390728476821192</data>
+  <data key="d14">0.007936507936507936</data>
+</edge>
+<edge source="apache spark" target="hugging face">
+  <data key="d12">40</data>
+  <data key="d13">0.042238648363252376</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="apache spark" target="java">
+  <data key="d12">235</data>
+  <data key="d13">0.15932203389830507</data>
+  <data key="d14">0.00425531914893617</data>
+</edge>
+<edge source="apache spark" target="javascript">
+  <data key="d12">57</data>
+  <data key="d13">0.04234769687964339</data>
+  <data key="d14">0.017543859649122806</data>
+</edge>
+<edge source="apache spark" target="keras">
+  <data key="d12">22</data>
+  <data key="d13">0.02466367713004484</data>
+  <data key="d14">0.045454545454545456</data>
+</edge>
+<edge source="apache spark" target="kubernetes">
+  <data key="d12">124</data>
+  <data key="d13">0.08587257617728532</data>
+  <data key="d14">0.008064516129032258</data>
+</edge>
+<edge source="apache spark" target="langchain">
+  <data key="d12">41</data>
+  <data key="d13">0.04149797570850203</data>
+  <data key="d14">0.024390243902439025</data>
+</edge>
+<edge source="apache spark" target="linux">
+  <data key="d12">47</data>
+  <data key="d13">0.033837293016558675</data>
+  <data key="d14">0.02127659574468085</data>
+</edge>
+<edge source="apache spark" target="llm / genai">
+  <data key="d12">339</data>
+  <data key="d13">0.150066401062417</data>
+  <data key="d14">0.0029498525073746312</data>
+</edge>
+<edge source="apache spark" target="looker">
+  <data key="d12">23</data>
+  <data key="d13">0.021081576535288724</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="apache spark" target="mongodb">
+  <data key="d12">15</data>
+  <data key="d13">0.015957446808510637</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="apache spark" target="mysql">
+  <data key="d12">23</data>
+  <data key="d13">0.024008350730688934</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="apache spark" target="nlp">
+  <data key="d12">130</data>
+  <data key="d13">0.11796733212341198</data>
+  <data key="d14">0.007692307692307693</data>
+</edge>
+<edge source="apache spark" target="numpy">
+  <data key="d12">37</data>
+  <data key="d13">0.03965702036441586</data>
+  <data key="d14">0.02702702702702703</data>
+</edge>
+<edge source="apache spark" target="pandas">
+  <data key="d12">60</data>
+  <data key="d13">0.06217616580310881</data>
+  <data key="d14">0.016666666666666666</data>
+</edge>
+<edge source="apache spark" target="postgresql">
+  <data key="d12">47</data>
+  <data key="d13">0.040763226366001735</data>
+  <data key="d14">0.02127659574468085</data>
+</edge>
+<edge source="apache spark" target="power bi">
+  <data key="d12">120</data>
+  <data key="d13">0.08504606661941885</data>
+  <data key="d14">0.008333333333333333</data>
+</edge>
+<edge source="apache spark" target="python">
+  <data key="d12">742</data>
+  <data key="d13">0.2157603954637976</data>
+  <data key="d14">0.0013477088948787063</data>
+</edge>
+<edge source="apache spark" target="pytorch">
+  <data key="d12">156</data>
+  <data key="d13">0.129783693843594</data>
+  <data key="d14">0.00641025641025641</data>
+</edge>
+<edge source="apache spark" target="r">
+  <data key="d12">328</data>
+  <data key="d13">0.2701812191103789</data>
+  <data key="d14">0.003048780487804878</data>
+</edge>
+<edge source="apache spark" target="redis">
+  <data key="d12">24</data>
+  <data key="d13">0.025889967637540454</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="apache spark" target="redshift">
+  <data key="d12">35</data>
+  <data key="d13">0.03691983122362869</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="apache spark" target="rust">
+  <data key="d12">7</data>
+  <data key="d13">0.007042253521126761</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="apache spark" target="scala">
+  <data key="d12">436</data>
+  <data key="d13">0.4471794871794872</data>
+  <data key="d14">0.0022935779816513763</data>
+</edge>
+<edge source="apache spark" target="scikit-learn">
+  <data key="d12">77</data>
+  <data key="d13">0.08105263157894736</data>
+  <data key="d14">0.012987012987012988</data>
+</edge>
+<edge source="apache spark" target="snowflake">
+  <data key="d12">103</data>
+  <data key="d13">0.08187599364069953</data>
+  <data key="d14">0.009708737864077669</data>
+</edge>
+<edge source="apache spark" target="sql">
+  <data key="d12">561</data>
+  <data key="d13">0.20414847161572053</data>
+  <data key="d14">0.0017825311942959</data>
+</edge>
+<edge source="apache spark" target="tableau">
+  <data key="d12">118</data>
+  <data key="d13">0.08333333333333333</data>
+  <data key="d14">0.00847457627118644</data>
+</edge>
+<edge source="apache spark" target="tensorflow">
+  <data key="d12">324</data>
+  <data key="d13">0.3025210084033613</data>
+  <data key="d14">0.0030864197530864196</data>
+</edge>
+<edge source="apache spark" target="terraform">
+  <data key="d12">60</data>
+  <data key="d13">0.05217391304347826</data>
+  <data key="d14">0.016666666666666666</data>
+</edge>
+<edge source="apache spark" target="typescript">
+  <data key="d12">18</data>
+  <data key="d13">0.014481094127111826</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="aws" target="azure">
+  <data key="d12">738</data>
+  <data key="d13">0.44538322269161135</data>
+  <data key="d14">0.0013550135501355014</data>
+</edge>
+<edge source="aws" target="bash/shell">
+  <data key="d12">54</data>
+  <data key="d13">0.037526059763724806</data>
+  <data key="d14">0.018518518518518517</data>
+</edge>
+<edge source="aws" target="bigquery">
+  <data key="d12">69</data>
+  <data key="d13">0.04798331015299027</data>
+  <data key="d14">0.014492753623188406</data>
+</edge>
+<edge source="aws" target="c#">
+  <data key="d12">76</data>
+  <data key="d13">0.053445850914205346</data>
+  <data key="d14">0.013157894736842105</data>
+</edge>
+<edge source="aws" target="c++">
+  <data key="d12">74</data>
+  <data key="d13">0.04013015184381779</data>
+  <data key="d14">0.013513513513513514</data>
+</edge>
+<edge source="aws" target="ci/cd">
+  <data key="d12">391</data>
+  <data key="d13">0.20481927710843373</data>
+  <data key="d14">0.0025575447570332483</data>
+</edge>
+<edge source="aws" target="computer vision">
+  <data key="d12">32</data>
+  <data key="d13">0.02245614035087719</data>
+  <data key="d14">0.03125</data>
+</edge>
+<edge source="aws" target="databricks">
+  <data key="d12">219</data>
+  <data key="d13">0.1462925851703407</data>
+  <data key="d14">0.0045662100456621</data>
+</edge>
+<edge source="aws" target="docker">
+  <data key="d12">230</data>
+  <data key="d13">0.15436241610738255</data>
+  <data key="d14">0.004347826086956522</data>
+</edge>
+<edge source="aws" target="gcp">
+  <data key="d12">643</data>
+  <data key="d13">0.3947206875383671</data>
+  <data key="d14">0.0015552099533437014</data>
+</edge>
+<edge source="aws" target="git">
+  <data key="d12">252</data>
+  <data key="d13">0.14911242603550295</data>
+  <data key="d14">0.003968253968253968</data>
+</edge>
+<edge source="aws" target="go">
+  <data key="d12">48</data>
+  <data key="d13">0.036613272311212815</data>
+  <data key="d14">0.020833333333333332</data>
+</edge>
+<edge source="aws" target="hadoop">
+  <data key="d12">65</data>
+  <data key="d13">0.04843517138599106</data>
+  <data key="d14">0.015384615384615385</data>
+</edge>
+<edge source="aws" target="hugging face">
+  <data key="d12">45</data>
+  <data key="d13">0.03416856492027335</data>
+  <data key="d14">0.022222222222222223</data>
+</edge>
+<edge source="aws" target="java">
+  <data key="d12">258</data>
+  <data key="d13">0.1412151067323481</data>
+  <data key="d14">0.003875968992248062</data>
+</edge>
+<edge source="aws" target="javascript">
+  <data key="d12">160</data>
+  <data key="d13">0.09888751545117429</data>
+  <data key="d14">0.00625</data>
+</edge>
+<edge source="aws" target="keras">
+  <data key="d12">17</data>
+  <data key="d13">0.013364779874213837</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="aws" target="kubernetes">
+  <data key="d12">304</data>
+  <data key="d13">0.18547895057962172</data>
+  <data key="d14">0.003289473684210526</data>
+</edge>
+<edge source="aws" target="langchain">
+  <data key="d12">76</data>
+  <data key="d13">0.0572289156626506</data>
+  <data key="d14">0.013157894736842105</data>
+</edge>
+<edge source="aws" target="linux">
+  <data key="d12">73</data>
+  <data key="d13">0.04200230149597238</data>
+  <data key="d14">0.0136986301369863</data>
+</edge>
+<edge source="aws" target="llm / genai">
+  <data key="d12">457</data>
+  <data key="d13">0.18163751987281399</data>
+  <data key="d14">0.002188183807439825</data>
+</edge>
+<edge source="aws" target="looker">
+  <data key="d12">25</data>
+  <data key="d13">0.01707650273224044</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="aws" target="mongodb">
+  <data key="d12">33</data>
+  <data key="d13">0.025443330763299923</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="aws" target="mysql">
+  <data key="d12">58</data>
+  <data key="d13">0.04468412942989214</data>
+  <data key="d14">0.017241379310344827</data>
+</edge>
+<edge source="aws" target="nlp">
+  <data key="d12">84</data>
+  <data key="d13">0.0551543007222587</data>
+  <data key="d14">0.011904761904761904</data>
+</edge>
+<edge source="aws" target="numpy">
+  <data key="d12">22</data>
+  <data key="d13">0.016628873771730914</data>
+  <data key="d14">0.045454545454545456</data>
+</edge>
+<edge source="aws" target="pandas">
+  <data key="d12">54</data>
+  <data key="d13">0.04011887072808321</data>
+  <data key="d14">0.018518518518518517</data>
+</edge>
+<edge source="aws" target="postgresql">
+  <data key="d12">146</data>
+  <data key="d13">0.10216934919524143</data>
+  <data key="d14">0.00684931506849315</data>
+</edge>
+<edge source="aws" target="power bi">
+  <data key="d12">75</data>
+  <data key="d13">0.0409612233752048</data>
+  <data key="d14">0.013333333333333334</data>
+</edge>
+<edge source="aws" target="python">
+  <data key="d12">796</data>
+  <data key="d13">0.21170212765957447</data>
+  <data key="d14">0.001256281407035176</data>
+</edge>
+<edge source="aws" target="pytorch">
+  <data key="d12">126</data>
+  <data key="d13">0.07840696950840075</data>
+  <data key="d14">0.007936507936507936</data>
+</edge>
+<edge source="aws" target="r">
+  <data key="d12">86</data>
+  <data key="d13">0.04696886947023485</data>
+  <data key="d14">0.011627906976744186</data>
+</edge>
+<edge source="aws" target="redis">
+  <data key="d12">25</data>
+  <data key="d13">0.01921598770176787</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="aws" target="redshift">
+  <data key="d12">73</data>
+  <data key="d13">0.05680933852140078</data>
+  <data key="d14">0.0136986301369863</data>
+</edge>
+<edge source="aws" target="rust">
+  <data key="d12">25</data>
+  <data key="d13">0.018504811250925242</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="aws" target="scala">
+  <data key="d12">137</data>
+  <data key="d13">0.08308065494238932</data>
+  <data key="d14">0.0072992700729927005</data>
+</edge>
+<edge source="aws" target="scikit-learn">
+  <data key="d12">69</data>
+  <data key="d13">0.051762940735183796</data>
+  <data key="d14">0.014492753623188406</data>
+</edge>
+<edge source="aws" target="snowflake">
+  <data key="d12">201</data>
+  <data key="d13">0.13094462540716612</data>
+  <data key="d14">0.004975124378109453</data>
+</edge>
+<edge source="aws" target="sql">
+  <data key="d12">531</data>
+  <data key="d13">0.16841103710751665</data>
+  <data key="d14">0.0018832391713747645</data>
+</edge>
+<edge source="aws" target="tableau">
+  <data key="d12">88</data>
+  <data key="d13">0.04832509610104338</data>
+  <data key="d14">0.011363636363636364</data>
+</edge>
+<edge source="aws" target="tensorflow">
+  <data key="d12">118</data>
+  <data key="d13">0.07142857142857142</data>
+  <data key="d14">0.00847457627118644</data>
+</edge>
+<edge source="aws" target="terraform">
+  <data key="d12">159</data>
+  <data key="d13">0.11150070126227209</data>
+  <data key="d14">0.006289308176100629</data>
+</edge>
+<edge source="aws" target="typescript">
+  <data key="d12">144</data>
+  <data key="d13">0.09651474530831099</data>
+  <data key="d14">0.006944444444444444</data>
+</edge>
+<edge source="azure" target="bash/shell">
+  <data key="d12">49</data>
+  <data key="d13">0.03670411985018727</data>
+  <data key="d14">0.02040816326530612</data>
+</edge>
+<edge source="azure" target="bigquery">
+  <data key="d12">70</data>
+  <data key="d13">0.05271084337349398</data>
+  <data key="d14">0.014285714285714285</data>
+</edge>
+<edge source="azure" target="c#">
+  <data key="d12">79</data>
+  <data key="d13">0.06030534351145038</data>
+  <data key="d14">0.012658227848101266</data>
+</edge>
+<edge source="azure" target="c++">
+  <data key="d12">68</data>
+  <data key="d13">0.039058012636415854</data>
+  <data key="d14">0.014705882352941176</data>
+</edge>
+<edge source="azure" target="ci/cd">
+  <data key="d12">389</data>
+  <data key="d13">0.21587125416204217</data>
+  <data key="d14">0.002570694087403599</data>
+</edge>
+<edge source="azure" target="computer vision">
+  <data key="d12">24</data>
+  <data key="d13">0.01812688821752266</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="azure" target="databricks">
+  <data key="d12">242</data>
+  <data key="d13">0.1772893772893773</data>
+  <data key="d14">0.004132231404958678</data>
+</edge>
+<edge source="azure" target="docker">
+  <data key="d12">196</data>
+  <data key="d13">0.13851590106007067</data>
+  <data key="d14">0.00510204081632653</data>
+</edge>
+<edge source="azure" target="gcp">
+  <data key="d12">714</data>
+  <data key="d13">0.4927536231884058</data>
+  <data key="d14">0.0014005602240896359</data>
+</edge>
+<edge source="azure" target="git">
+  <data key="d12">245</data>
+  <data key="d13">0.15428211586901763</data>
+  <data key="d14">0.004081632653061225</data>
+</edge>
+<edge source="azure" target="go">
+  <data key="d12">38</data>
+  <data key="d13">0.03135313531353135</data>
+  <data key="d14">0.02631578947368421</data>
+</edge>
+<edge source="azure" target="hadoop">
+  <data key="d12">72</data>
+  <data key="d13">0.05872756933115824</data>
+  <data key="d14">0.013888888888888888</data>
+</edge>
+<edge source="azure" target="hugging face">
+  <data key="d12">43</data>
+  <data key="d13">0.03553719008264463</data>
+  <data key="d14">0.023255813953488372</data>
+</edge>
+<edge source="azure" target="java">
+  <data key="d12">307</data>
+  <data key="d13">0.18394248052726184</data>
+  <data key="d14">0.003257328990228013</data>
+</edge>
+<edge source="azure" target="javascript">
+  <data key="d12">157</data>
+  <data key="d13">0.10383597883597884</data>
+  <data key="d14">0.006369426751592357</data>
+</edge>
+<edge source="azure" target="keras">
+  <data key="d12">20</data>
+  <data key="d13">0.017241379310344827</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="azure" target="kubernetes">
+  <data key="d12">274</data>
+  <data key="d13">0.17564102564102563</data>
+  <data key="d14">0.0036496350364963502</data>
+</edge>
+<edge source="azure" target="langchain">
+  <data key="d12">74</data>
+  <data key="d13">0.06060606060606061</data>
+  <data key="d14">0.013513513513513514</data>
+</edge>
+<edge source="azure" target="linux">
+  <data key="d12">70</data>
+  <data key="d13">0.0428921568627451</data>
+  <data key="d14">0.014285714285714285</data>
+</edge>
+<edge source="azure" target="llm / genai">
+  <data key="d12">416</data>
+  <data key="d13">0.16993464052287582</data>
+  <data key="d14">0.002403846153846154</data>
+</edge>
+<edge source="azure" target="looker">
+  <data key="d12">23</data>
+  <data key="d13">0.01694915254237288</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="azure" target="mongodb">
+  <data key="d12">38</data>
+  <data key="d13">0.032121724429416736</data>
+  <data key="d14">0.02631578947368421</data>
+</edge>
+<edge source="azure" target="mysql">
+  <data key="d12">40</data>
+  <data key="d13">0.033140016570008285</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="azure" target="nlp">
+  <data key="d12">72</data>
+  <data key="d13">0.05049088359046283</data>
+  <data key="d14">0.013888888888888888</data>
+</edge>
+<edge source="azure" target="numpy">
+  <data key="d12">13</data>
+  <data key="d13">0.01062959934587081</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="azure" target="pandas">
+  <data key="d12">42</data>
+  <data key="d13">0.03362690152121697</data>
+  <data key="d14">0.023809523809523808</data>
+</edge>
+<edge source="azure" target="postgresql">
+  <data key="d12">78</data>
+  <data key="d13">0.056195965417867436</data>
+  <data key="d14">0.01282051282051282</data>
+</edge>
+<edge source="azure" target="power bi">
+  <data key="d12">117</data>
+  <data key="d13">0.06964285714285715</data>
+  <data key="d14">0.008547008547008548</data>
+</edge>
+<edge source="azure" target="python">
+  <data key="d12">681</data>
+  <data key="d13">0.1808284652150823</data>
+  <data key="d14">0.0014684287812041115</data>
+</edge>
+<edge source="azure" target="pytorch">
+  <data key="d12">110</data>
+  <data key="d13">0.0726552179656539</data>
+  <data key="d14">0.00909090909090909</data>
+</edge>
+<edge source="azure" target="r">
+  <data key="d12">100</data>
+  <data key="d13">0.0585480093676815</data>
+  <data key="d14">0.01</data>
+</edge>
+<edge source="azure" target="redis">
+  <data key="d12">19</data>
+  <data key="d13">0.015859766277128547</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="azure" target="redshift">
+  <data key="d12">21</data>
+  <data key="d13">0.01710097719869707</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="azure" target="rust">
+  <data key="d12">18</data>
+  <data key="d13">0.014411529223378704</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="azure" target="scala">
+  <data key="d12">176</data>
+  <data key="d13">0.11725516322451698</data>
+  <data key="d14">0.005681818181818182</data>
+</edge>
+<edge source="azure" target="scikit-learn">
+  <data key="d12">58</data>
+  <data key="d13">0.04696356275303644</data>
+  <data key="d14">0.017241379310344827</data>
+</edge>
+<edge source="azure" target="snowflake">
+  <data key="d12">136</data>
+  <data key="d13">0.09121395036887994</data>
+  <data key="d14">0.007352941176470588</data>
+</edge>
+<edge source="azure" target="sql">
+  <data key="d12">510</data>
+  <data key="d13">0.16639477977161501</data>
+  <data key="d14">0.00196078431372549</data>
+</edge>
+<edge source="azure" target="tableau">
+  <data key="d12">79</data>
+  <data key="d13">0.04590354445090064</data>
+  <data key="d14">0.012658227848101266</data>
+</edge>
+<edge source="azure" target="tensorflow">
+  <data key="d12">135</data>
+  <data key="d13">0.08846657929226737</data>
+  <data key="d14">0.007407407407407408</data>
+</edge>
+<edge source="azure" target="terraform">
+  <data key="d12">109</data>
+  <data key="d13">0.07973664959765911</data>
+  <data key="d14">0.009174311926605505</data>
+</edge>
+<edge source="azure" target="typescript">
+  <data key="d12">96</data>
+  <data key="d13">0.06708595387840671</data>
+  <data key="d14">0.010416666666666666</data>
+</edge>
+<edge source="bash/shell" target="bigquery">
+  <data key="d12">5</data>
+  <data key="d13">0.010183299389002037</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="bash/shell" target="c#">
+  <data key="d12">3</data>
+  <data key="d13">0.006198347107438017</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="bash/shell" target="c++">
+  <data key="d12">46</data>
+  <data key="d13">0.053426248548199766</data>
+  <data key="d14">0.021739130434782608</data>
+</edge>
+<edge source="bash/shell" target="ci/cd">
+  <data key="d12">73</data>
+  <data key="d13">0.060032894736842105</data>
+  <data key="d14">0.0136986301369863</data>
+</edge>
+<edge source="bash/shell" target="computer vision">
+  <data key="d12">5</data>
+  <data key="d13">0.011337868480725623</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="bash/shell" target="databricks">
+  <data key="d12">9</data>
+  <data key="d13">0.01293103448275862</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="bash/shell" target="docker">
+  <data key="d12">29</data>
+  <data key="d13">0.04264705882352941</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="bash/shell" target="gcp">
+  <data key="d12">83</data>
+  <data key="d13">0.07045840407470289</data>
+  <data key="d14">0.012048192771084338</data>
+</edge>
+<edge source="bash/shell" target="git">
+  <data key="d12">51</data>
+  <data key="d13">0.05795454545454545</data>
+  <data key="d14">0.0196078431372549</data>
+</edge>
+<edge source="bash/shell" target="go">
+  <data key="d12">4</data>
+  <data key="d13">0.011627906976744186</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="bash/shell" target="hadoop">
+  <data key="d12">9</data>
+  <data key="d13">0.023255813953488372</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="bash/shell" target="java">
+  <data key="d12">27</data>
+  <data key="d13">0.025787965616045846</data>
+  <data key="d14">0.037037037037037035</data>
+</edge>
+<edge source="bash/shell" target="javascript">
+  <data key="d12">17</data>
+  <data key="d13">0.02266666666666667</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="bash/shell" target="kubernetes">
+  <data key="d12">61</data>
+  <data key="d13">0.07003444316877153</data>
+  <data key="d14">0.01639344262295082</data>
+</edge>
+<edge source="bash/shell" target="langchain">
+  <data key="d12">5</data>
+  <data key="d13">0.01288659793814433</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="bash/shell" target="linux">
+  <data key="d12">157</data>
+  <data key="d13">0.24416796267496113</data>
+  <data key="d14">0.006369426751592357</data>
+</edge>
+<edge source="bash/shell" target="llm / genai">
+  <data key="d12">27</data>
+  <data key="d13">0.013953488372093023</data>
+  <data key="d14">0.037037037037037035</data>
+</edge>
+<edge source="bash/shell" target="mongodb">
+  <data key="d12">3</data>
+  <data key="d13">0.00949367088607595</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="bash/shell" target="mysql">
+  <data key="d12">5</data>
+  <data key="d13">0.014705882352941176</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="bash/shell" target="nlp">
+  <data key="d12">3</data>
+  <data key="d13">0.00505902192242833</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="bash/shell" target="numpy">
+  <data key="d12">3</data>
+  <data key="d13">0.00906344410876133</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="bash/shell" target="pandas">
+  <data key="d12">3</data>
+  <data key="d13">0.007772020725388601</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="bash/shell" target="postgresql">
+  <data key="d12">18</data>
+  <data key="d13">0.03296703296703297</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="bash/shell" target="power bi">
+  <data key="d12">5</data>
+  <data key="d13">0.0056179775280898875</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="bash/shell" target="python">
+  <data key="d12">216</data>
+  <data key="d13">0.06488434965455092</data>
+  <data key="d14">0.004629629629629629</data>
+</edge>
+<edge source="bash/shell" target="pytorch">
+  <data key="d12">7</data>
+  <data key="d13">0.009790209790209791</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="bash/shell" target="r">
+  <data key="d12">2</data>
+  <data key="d13">0.0022123893805309734</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="bash/shell" target="redis">
+  <data key="d12">4</data>
+  <data key="d13">0.012861736334405145</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="bash/shell" target="redshift">
+  <data key="d12">6</data>
+  <data key="d13">0.017595307917888565</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="bash/shell" target="rust">
+  <data key="d12">1</data>
+  <data key="d13">0.0027472527472527475</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="bash/shell" target="scala">
+  <data key="d12">5</data>
+  <data key="d13">0.006493506493506494</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="bash/shell" target="scikit-learn">
+  <data key="d12">3</data>
+  <data key="d13">0.007731958762886598</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="bash/shell" target="snowflake">
+  <data key="d12">12</data>
+  <data key="d13">0.016830294530154277</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="bash/shell" target="sql">
+  <data key="d12">51</data>
+  <data key="d13">0.019450800915331808</data>
+  <data key="d14">0.0196078431372549</data>
+</edge>
+<edge source="bash/shell" target="tableau">
+  <data key="d12">6</data>
+  <data key="d13">0.006726457399103139</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="bash/shell" target="tensorflow">
+  <data key="d12">6</data>
+  <data key="d13">0.00796812749003984</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="bash/shell" target="terraform">
+  <data key="d12">89</data>
+  <data key="d13">0.18350515463917524</data>
+  <data key="d14">0.011235955056179775</data>
+</edge>
+<edge source="bash/shell" target="typescript">
+  <data key="d12">12</data>
+  <data key="d13">0.01957585644371941</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="bigquery" target="c#">
+  <data key="d12">6</data>
+  <data key="d13">0.012121212121212121</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="bigquery" target="c++">
+  <data key="d12">16</data>
+  <data key="d13">0.017679558011049725</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="bigquery" target="ci/cd">
+  <data key="d12">54</data>
+  <data key="d13">0.04323458767013611</data>
+  <data key="d14">0.018518518518518517</data>
+</edge>
+<edge source="bigquery" target="computer vision">
+  <data key="d12">2</data>
+  <data key="d13">0.004366812227074236</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="bigquery" target="databricks">
+  <data key="d12">46</data>
+  <data key="d13">0.06835066864784546</data>
+  <data key="d14">0.021739130434782608</data>
+</edge>
+<edge source="bigquery" target="docker">
+  <data key="d12">22</data>
+  <data key="d13">0.03138373751783167</data>
+  <data key="d14">0.045454545454545456</data>
+</edge>
+<edge source="bigquery" target="gcp">
+  <data key="d12">141</data>
+  <data key="d13">0.12433862433862433</data>
+  <data key="d14">0.0070921985815602835</data>
+</edge>
+<edge source="bigquery" target="git">
+  <data key="d12">40</data>
+  <data key="d13">0.04419889502762431</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="bigquery" target="go">
+  <data key="d12">4</data>
+  <data key="d13">0.0111731843575419</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="bigquery" target="hadoop">
+  <data key="d12">12</data>
+  <data key="d13">0.03015075376884422</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="bigquery" target="hugging face">
+  <data key="d12">4</data>
+  <data key="d13">0.0110803324099723</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="bigquery" target="java">
+  <data key="d12">46</data>
+  <data key="d13">0.044145873320537425</data>
+  <data key="d14">0.021739130434782608</data>
+</edge>
+<edge source="bigquery" target="javascript">
+  <data key="d12">29</data>
+  <data key="d13">0.03856382978723404</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="bigquery" target="kubernetes">
+  <data key="d12">31</data>
+  <data key="d13">0.033879781420765025</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="bigquery" target="langchain">
+  <data key="d12">8</data>
+  <data key="d13">0.020050125313283207</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="bigquery" target="linux">
+  <data key="d12">8</data>
+  <data key="d13">0.009925558312655087</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="bigquery" target="llm / genai">
+  <data key="d12">81</data>
+  <data key="d13">0.042744063324538256</data>
+  <data key="d14">0.012345679012345678</data>
+</edge>
+<edge source="bigquery" target="looker">
+  <data key="d12">48</data>
+  <data key="d13">0.10810810810810811</data>
+  <data key="d14">0.020833333333333332</data>
+</edge>
+<edge source="bigquery" target="mongodb">
+  <data key="d12">5</data>
+  <data key="d13">0.01524390243902439</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="bigquery" target="mysql">
+  <data key="d12">10</data>
+  <data key="d13">0.02865329512893983</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="bigquery" target="nlp">
+  <data key="d12">20</data>
+  <data key="d13">0.03389830508474576</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="bigquery" target="numpy">
+  <data key="d12">4</data>
+  <data key="d13">0.011627906976744186</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="bigquery" target="pandas">
+  <data key="d12">11</data>
+  <data key="d13">0.02806122448979592</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="bigquery" target="postgresql">
+  <data key="d12">18</data>
+  <data key="d13">0.03214285714285714</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="bigquery" target="power bi">
+  <data key="d12">53</data>
+  <data key="d13">0.06191588785046729</data>
+  <data key="d14">0.018867924528301886</data>
+</edge>
+<edge source="bigquery" target="python">
+  <data key="d12">203</data>
+  <data key="d13">0.060488676996424316</data>
+  <data key="d14">0.0049261083743842365</data>
+</edge>
+<edge source="bigquery" target="pytorch">
+  <data key="d12">13</data>
+  <data key="d13">0.017980636237897647</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="bigquery" target="r">
+  <data key="d12">44</data>
+  <data key="d13">0.0502283105022831</data>
+  <data key="d14">0.022727272727272728</data>
+</edge>
+<edge source="bigquery" target="redis">
+  <data key="d12">9</data>
+  <data key="d13">0.028125</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="bigquery" target="redshift">
+  <data key="d12">40</data>
+  <data key="d13">0.12461059190031153</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="bigquery" target="rust">
+  <data key="d12">3</data>
+  <data key="d13">0.007978723404255319</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="bigquery" target="scala">
+  <data key="d12">37</data>
+  <data key="d13">0.04920212765957447</data>
+  <data key="d14">0.02702702702702703</data>
+</edge>
+<edge source="bigquery" target="scikit-learn">
+  <data key="d12">9</data>
+  <data key="d13">0.022727272727272728</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="bigquery" target="snowflake">
+  <data key="d12">105</data>
+  <data key="d13">0.16561514195583596</data>
+  <data key="d14">0.009523809523809525</data>
+</edge>
+<edge source="bigquery" target="sql">
+  <data key="d12">206</data>
+  <data key="d13">0.083031035872632</data>
+  <data key="d14">0.0048543689320388345</data>
+</edge>
+<edge source="bigquery" target="tableau">
+  <data key="d12">62</data>
+  <data key="d13">0.07294117647058823</data>
+  <data key="d14">0.016129032258064516</data>
+</edge>
+<edge source="bigquery" target="tensorflow">
+  <data key="d12">24</data>
+  <data key="d13">0.03204272363150868</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="bigquery" target="terraform">
+  <data key="d12">16</data>
+  <data key="d13">0.027972027972027972</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="bigquery" target="typescript">
+  <data key="d12">12</data>
+  <data key="d13">0.019138755980861243</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="c#" target="c++">
+  <data key="d12">66</data>
+  <data key="d13">0.07801418439716312</data>
+  <data key="d14">0.015151515151515152</data>
+</edge>
+<edge source="c#" target="ci/cd">
+  <data key="d12">102</data>
+  <data key="d13">0.08557046979865772</data>
+  <data key="d14">0.00980392156862745</data>
+</edge>
+<edge source="c#" target="computer vision">
+  <data key="d12">6</data>
+  <data key="d13">0.01348314606741573</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="c#" target="databricks">
+  <data key="d12">3</data>
+  <data key="d13">0.004243281471004243</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="c#" target="docker">
+  <data key="d12">74</data>
+  <data key="d13">0.115625</data>
+  <data key="d14">0.013513513513513514</data>
+</edge>
+<edge source="c#" target="gcp">
+  <data key="d12">58</data>
+  <data key="d13">0.048013245033112585</data>
+  <data key="d14">0.017241379310344827</data>
+</edge>
+<edge source="c#" target="git">
+  <data key="d12">40</data>
+  <data key="d13">0.044642857142857144</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="c#" target="go">
+  <data key="d12">16</data>
+  <data key="d13">0.04747774480712166</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="c#" target="hadoop">
+  <data key="d12">9</data>
+  <data key="d13">0.02295918367346939</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="c#" target="hugging face">
+  <data key="d12">14</data>
+  <data key="d13">0.04093567251461988</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="c#" target="java">
+  <data key="d12">150</data>
+  <data key="d13">0.16146393972012918</data>
+  <data key="d14">0.006666666666666667</data>
+</edge>
+<edge source="c#" target="javascript">
+  <data key="d12">110</data>
+  <data key="d13">0.1661631419939577</data>
+  <data key="d14">0.00909090909090909</data>
+</edge>
+<edge source="c#" target="kubernetes">
+  <data key="d12">78</data>
+  <data key="d13">0.09080325960419092</data>
+  <data key="d14">0.01282051282051282</data>
+</edge>
+<edge source="c#" target="langchain">
+  <data key="d12">8</data>
+  <data key="d13">0.020512820512820513</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="c#" target="linux">
+  <data key="d12">59</data>
+  <data key="d13">0.07908847184986595</data>
+  <data key="d14">0.01694915254237288</data>
+</edge>
+<edge source="c#" target="llm / genai">
+  <data key="d12">53</data>
+  <data key="d13">0.027690700104493208</data>
+  <data key="d14">0.018867924528301886</data>
+</edge>
+<edge source="c#" target="looker">
+  <data key="d12">1</data>
+  <data key="d13">0.002074688796680498</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="c#" target="mongodb">
+  <data key="d12">7</data>
+  <data key="d13">0.022082018927444796</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="c#" target="mysql">
+  <data key="d12">11</data>
+  <data key="d13">0.032448377581120944</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="c#" target="nlp">
+  <data key="d12">1</data>
+  <data key="d13">0.0016666666666666668</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="c#" target="numpy">
+  <data key="d12">2</data>
+  <data key="d13">0.005934718100890208</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="c#" target="pandas">
+  <data key="d12">2</data>
+  <data key="d13">0.00510204081632653</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="c#" target="postgresql">
+  <data key="d12">72</data>
+  <data key="d13">0.1448692152917505</data>
+  <data key="d14">0.013888888888888888</data>
+</edge>
+<edge source="c#" target="power bi">
+  <data key="d12">17</data>
+  <data key="d13">0.01925254813137033</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="c#" target="python">
+  <data key="d12">185</data>
+  <data key="d13">0.0549777117384844</data>
+  <data key="d14">0.005405405405405406</data>
+</edge>
+<edge source="c#" target="pytorch">
+  <data key="d12">18</data>
+  <data key="d13">0.02538787023977433</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="c#" target="r">
+  <data key="d12">5</data>
+  <data key="d13">0.005518763796909493</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="c#" target="redis">
+  <data key="d12">2</data>
+  <data key="d13">0.006289308176100629</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="c#" target="redshift">
+  <data key="d12">2</data>
+  <data key="d13">0.005714285714285714</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="c#" target="rust">
+  <data key="d12">15</data>
+  <data key="d13">0.04225352112676056</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="c#" target="scala">
+  <data key="d12">74</data>
+  <data key="d13">0.1048158640226629</data>
+  <data key="d14">0.013513513513513514</data>
+</edge>
+<edge source="c#" target="scikit-learn">
+  <data key="d12">2</data>
+  <data key="d13">0.005076142131979695</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="c#" target="snowflake">
+  <data key="d12">11</data>
+  <data key="d13">0.015299026425591099</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="c#" target="sql">
+  <data key="d12">123</data>
+  <data key="d13">0.04814090019569472</data>
+  <data key="d14">0.008130081300813009</data>
+</edge>
+<edge source="c#" target="tableau">
+  <data key="d12">6</data>
+  <data key="d13">0.006688963210702341</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="c#" target="tensorflow">
+  <data key="d12">8</data>
+  <data key="d13">0.010582010582010581</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="c#" target="terraform">
+  <data key="d12">34</data>
+  <data key="d13">0.062385321100917435</data>
+  <data key="d14">0.029411764705882353</data>
+</edge>
+<edge source="c#" target="typescript">
+  <data key="d12">50</data>
+  <data key="d13">0.08620689655172414</data>
+  <data key="d14">0.02</data>
+</edge>
+<edge source="c++" target="ci/cd">
+  <data key="d12">123</data>
+  <data key="d13">0.07730986800754243</data>
+  <data key="d14">0.008130081300813009</data>
+</edge>
+<edge source="c++" target="computer vision">
+  <data key="d12">68</data>
+  <data key="d13">0.08468244084682441</data>
+  <data key="d14">0.014705882352941176</data>
+</edge>
+<edge source="c++" target="databricks">
+  <data key="d12">7</data>
+  <data key="d13">0.006233303650934996</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="c++" target="docker">
+  <data key="d12">69</data>
+  <data key="d13">0.0647887323943662</data>
+  <data key="d14">0.014492753623188406</data>
+</edge>
+<edge source="c++" target="gcp">
+  <data key="d12">67</data>
+  <data key="d13">0.04138357010500309</data>
+  <data key="d14">0.014925373134328358</data>
+</edge>
+<edge source="c++" target="git">
+  <data key="d12">54</data>
+  <data key="d13">0.041474654377880185</data>
+  <data key="d14">0.018518518518518517</data>
+</edge>
+<edge source="c++" target="go">
+  <data key="d12">58</data>
+  <data key="d13">0.08111888111888112</data>
+  <data key="d14">0.017241379310344827</data>
+</edge>
+<edge source="c++" target="hadoop">
+  <data key="d12">16</data>
+  <data key="d13">0.01987577639751553</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="c++" target="hugging face">
+  <data key="d12">16</data>
+  <data key="d13">0.021052631578947368</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="c++" target="java">
+  <data key="d12">176</data>
+  <data key="d13">0.1330309901738473</data>
+  <data key="d14">0.005681818181818182</data>
+</edge>
+<edge source="c++" target="javascript">
+  <data key="d12">37</data>
+  <data key="d13">0.032034632034632034</data>
+  <data key="d14">0.02702702702702703</data>
+</edge>
+<edge source="c++" target="keras">
+  <data key="d12">6</data>
+  <data key="d13">0.00860832137733142</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="c++" target="kubernetes">
+  <data key="d12">101</data>
+  <data key="d13">0.0804140127388535</data>
+  <data key="d14">0.009900990099009901</data>
+</edge>
+<edge source="c++" target="langchain">
+  <data key="d12">5</data>
+  <data key="d13">0.006150061500615006</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="c++" target="linux">
+  <data key="d12">178</data>
+  <data key="d13">0.17000955109837632</data>
+  <data key="d14">0.0056179775280898875</data>
+</edge>
+<edge source="c++" target="llm / genai">
+  <data key="d12">125</data>
+  <data key="d13">0.05526083112290009</data>
+  <data key="d14">0.008</data>
+</edge>
+<edge source="c++" target="looker">
+  <data key="d12">2</data>
+  <data key="d13">0.0022197558268590455</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="c++" target="mongodb">
+  <data key="d12">3</data>
+  <data key="d13">0.004048582995951417</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="c++" target="mysql">
+  <data key="d12">13</data>
+  <data key="d13">0.017173051519154558</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="c++" target="nlp">
+  <data key="d12">36</data>
+  <data key="d13">0.03654822335025381</data>
+  <data key="d14">0.027777777777777776</data>
+</edge>
+<edge source="c++" target="numpy">
+  <data key="d12">5</data>
+  <data key="d13">0.006631299734748011</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="c++" target="pandas">
+  <data key="d12">4</data>
+  <data key="d13">0.0049382716049382715</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="c++" target="postgresql">
+  <data key="d12">33</data>
+  <data key="d13">0.034518828451882845</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="c++" target="power bi">
+  <data key="d12">10</data>
+  <data key="d13">0.007633587786259542</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="c++" target="python">
+  <data key="d12">531</data>
+  <data key="d13">0.15440535039255598</data>
+  <data key="d14">0.0018832391713747645</data>
+</edge>
+<edge source="c++" target="pytorch">
+  <data key="d12">117</data>
+  <data key="d13">0.11359223300970873</data>
+  <data key="d14">0.008547008547008548</data>
+</edge>
+<edge source="c++" target="r">
+  <data key="d12">29</data>
+  <data key="d13">0.02227342549923195</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="c++" target="redis">
+  <data key="d12">4</data>
+  <data key="d13">0.005434782608695652</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="c++" target="redshift">
+  <data key="d12">3</data>
+  <data key="d13">0.0039011703511053317</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="c++" target="rust">
+  <data key="d12">79</data>
+  <data key="d13">0.1111111111111111</data>
+  <data key="d14">0.012658227848101266</data>
+</edge>
+<edge source="c++" target="scala">
+  <data key="d12">51</data>
+  <data key="d13">0.044386422976501305</data>
+  <data key="d14">0.0196078431372549</data>
+</edge>
+<edge source="c++" target="scikit-learn">
+  <data key="d12">8</data>
+  <data key="d13">0.009900990099009901</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="c++" target="snowflake">
+  <data key="d12">7</data>
+  <data key="d13">0.006124234470691163</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="c++" target="sql">
+  <data key="d12">65</data>
+  <data key="d13">0.02143092647543686</data>
+  <data key="d14">0.015384615384615385</data>
+</edge>
+<edge source="c++" target="tableau">
+  <data key="d12">10</data>
+  <data key="d13">0.007616146230007616</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="c++" target="tensorflow">
+  <data key="d12">85</data>
+  <data key="d13">0.07734303912647862</data>
+  <data key="d14">0.011764705882352941</data>
+</edge>
+<edge source="c++" target="terraform">
+  <data key="d12">25</data>
+  <data key="d13">0.02566735112936345</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="c++" target="typescript">
+  <data key="d12">13</data>
+  <data key="d13">0.01253616200578592</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="ci/cd" target="computer vision">
+  <data key="d12">21</data>
+  <data key="d13">0.017045454545454544</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="ci/cd" target="databricks">
+  <data key="d12">161</data>
+  <data key="d13">0.11917098445595854</data>
+  <data key="d14">0.006211180124223602</data>
+</edge>
+<edge source="ci/cd" target="docker">
+  <data key="d12">271</data>
+  <data key="d13">0.2176706827309237</data>
+  <data key="d14">0.0036900369003690036</data>
+</edge>
+<edge source="ci/cd" target="gcp">
+  <data key="d12">311</data>
+  <data key="d13">0.17700626067159933</data>
+  <data key="d14">0.003215434083601286</data>
+</edge>
+<edge source="ci/cd" target="git">
+  <data key="d12">348</data>
+  <data key="d13">0.2503597122302158</data>
+  <data key="d14">0.0028735632183908046</data>
+</edge>
+<edge source="ci/cd" target="go">
+  <data key="d12">22</data>
+  <data key="d13">0.019417475728155338</data>
+  <data key="d14">0.045454545454545456</data>
+</edge>
+<edge source="ci/cd" target="hadoop">
+  <data key="d12">24</data>
+  <data key="d13">0.020356234096692113</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="ci/cd" target="hugging face">
+  <data key="d12">31</data>
+  <data key="d13">0.027506654835847383</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="ci/cd" target="java">
+  <data key="d12">330</data>
+  <data key="d13">0.2127659574468085</data>
+  <data key="d14">0.0030303030303030303</data>
+</edge>
+<edge source="ci/cd" target="javascript">
+  <data key="d12">218</data>
+  <data key="d13">0.1607669616519174</data>
+  <data key="d14">0.0045871559633027525</data>
+</edge>
+<edge source="ci/cd" target="keras">
+  <data key="d12">8</data>
+  <data key="d13">0.007428040854224698</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="ci/cd" target="kubernetes">
+  <data key="d12">371</data>
+  <data key="d13">0.2711988304093567</data>
+  <data key="d14">0.0026954177897574125</data>
+</edge>
+<edge source="ci/cd" target="langchain">
+  <data key="d12">64</data>
+  <data key="d13">0.056338028169014086</data>
+  <data key="d14">0.015625</data>
+</edge>
+<edge source="ci/cd" target="linux">
+  <data key="d12">177</data>
+  <data key="d13">0.12377622377622377</data>
+  <data key="d14">0.005649717514124294</data>
+</edge>
+<edge source="ci/cd" target="llm / genai">
+  <data key="d12">351</data>
+  <data key="d13">0.14516129032258066</data>
+  <data key="d14">0.002849002849002849</data>
+</edge>
+<edge source="ci/cd" target="looker">
+  <data key="d12">18</data>
+  <data key="d13">0.014206787687450671</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="ci/cd" target="mongodb">
+  <data key="d12">37</data>
+  <data key="d13">0.03397612488521579</data>
+  <data key="d14">0.02702702702702703</data>
+</edge>
+<edge source="ci/cd" target="mysql">
+  <data key="d12">38</data>
+  <data key="d13">0.03411131059245961</data>
+  <data key="d14">0.02631578947368421</data>
+</edge>
+<edge source="ci/cd" target="nlp">
+  <data key="d12">57</data>
+  <data key="d13">0.04234769687964339</data>
+  <data key="d14">0.017543859649122806</data>
+</edge>
+<edge source="ci/cd" target="numpy">
+  <data key="d12">16</data>
+  <data key="d13">0.014222222222222223</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="ci/cd" target="pandas">
+  <data key="d12">26</data>
+  <data key="d13">0.022222222222222223</data>
+  <data key="d14">0.038461538461538464</data>
+</edge>
+<edge source="ci/cd" target="postgresql">
+  <data key="d12">152</data>
+  <data key="d13">0.12469237079573421</data>
+  <data key="d14">0.006578947368421052</data>
+</edge>
+<edge source="ci/cd" target="power bi">
+  <data key="d12">66</data>
+  <data key="d13">0.040342298288508556</data>
+  <data key="d14">0.015151515151515152</data>
+</edge>
+<edge source="ci/cd" target="python">
+  <data key="d12">670</data>
+  <data key="d13">0.1819663226507333</data>
+  <data key="d14">0.0014925373134328358</data>
+</edge>
+<edge source="ci/cd" target="pytorch">
+  <data key="d12">76</data>
+  <data key="d13">0.05230557467309016</data>
+  <data key="d14">0.013157894736842105</data>
+</edge>
+<edge source="ci/cd" target="r">
+  <data key="d12">25</data>
+  <data key="d13">0.01481042654028436</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="ci/cd" target="redis">
+  <data key="d12">25</data>
+  <data key="d13">0.022789425706472195</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="ci/cd" target="redshift">
+  <data key="d12">33</data>
+  <data key="d13">0.029438001784121322</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="ci/cd" target="rust">
+  <data key="d12">30</data>
+  <data key="d13">0.02626970227670753</data>
+  <data key="d14">0.03333333333333333</data>
+</edge>
+<edge source="ci/cd" target="scala">
+  <data key="d12">119</data>
+  <data key="d13">0.08133971291866028</data>
+  <data key="d14">0.008403361344537815</data>
+</edge>
+<edge source="ci/cd" target="scikit-learn">
+  <data key="d12">29</data>
+  <data key="d13">0.02480752780153978</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="ci/cd" target="snowflake">
+  <data key="d12">107</data>
+  <data key="d13">0.07508771929824562</data>
+  <data key="d14">0.009345794392523364</data>
+</edge>
+<edge source="ci/cd" target="sql">
+  <data key="d12">424</data>
+  <data key="d13">0.1387434554973822</data>
+  <data key="d14">0.0023584905660377358</data>
+</edge>
+<edge source="ci/cd" target="tableau">
+  <data key="d12">54</data>
+  <data key="d13">0.03270745003028468</data>
+  <data key="d14">0.018518518518518517</data>
+</edge>
+<edge source="ci/cd" target="tensorflow">
+  <data key="d12">62</data>
+  <data key="d13">0.041223404255319146</data>
+  <data key="d14">0.016129032258064516</data>
+</edge>
+<edge source="ci/cd" target="terraform">
+  <data key="d12">193</data>
+  <data key="d13">0.16245791245791247</data>
+  <data key="d14">0.0051813471502590676</data>
+</edge>
+<edge source="ci/cd" target="typescript">
+  <data key="d12">126</data>
+  <data key="d13">0.09647779479326186</data>
+  <data key="d14">0.007936507936507936</data>
+</edge>
+<edge source="computer vision" target="databricks">
+  <data key="d12">7</data>
+  <data key="d13">0.010574018126888218</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="computer vision" target="docker">
+  <data key="d12">23</data>
+  <data key="d13">0.03538461538461538</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="computer vision" target="gcp">
+  <data key="d12">25</data>
+  <data key="d13">0.020833333333333332</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="computer vision" target="git">
+  <data key="d12">29</data>
+  <data key="d13">0.03348729792147806</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="computer vision" target="hadoop">
+  <data key="d12">3</data>
+  <data key="d13">0.008403361344537815</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="computer vision" target="hugging face">
+  <data key="d12">21</data>
+  <data key="d13">0.07142857142857142</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="computer vision" target="java">
+  <data key="d12">18</data>
+  <data key="d13">0.01764705882352941</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="computer vision" target="javascript">
+  <data key="d12">11</data>
+  <data key="d13">0.015277777777777777</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="computer vision" target="keras">
+  <data key="d12">5</data>
+  <data key="d13">0.02109704641350211</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="computer vision" target="kubernetes">
+  <data key="d12">23</data>
+  <data key="d13">0.026345933562428408</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="computer vision" target="langchain">
+  <data key="d12">7</data>
+  <data key="d13">0.02</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="computer vision" target="linux">
+  <data key="d12">26</data>
+  <data key="d13">0.03523035230352303</data>
+  <data key="d14">0.038461538461538464</data>
+</edge>
+<edge source="computer vision" target="llm / genai">
+  <data key="d12">93</data>
+  <data key="d13">0.05073649754500818</data>
+  <data key="d14">0.010752688172043012</data>
+</edge>
+<edge source="computer vision" target="nlp">
+  <data key="d12">38</data>
+  <data key="d13">0.07279693486590039</data>
+  <data key="d14">0.02631578947368421</data>
+</edge>
+<edge source="computer vision" target="numpy">
+  <data key="d12">7</data>
+  <data key="d13">0.024054982817869417</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="computer vision" target="pandas">
+  <data key="d12">9</data>
+  <data key="d13">0.02616279069767442</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="computer vision" target="postgresql">
+  <data key="d12">4</data>
+  <data key="d13">0.007633587786259542</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="computer vision" target="power bi">
+  <data key="d12">3</data>
+  <data key="d13">0.0035046728971962616</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="computer vision" target="python">
+  <data key="d12">151</data>
+  <data key="d13">0.044967242406194166</data>
+  <data key="d14">0.006622516556291391</data>
+</edge>
+<edge source="computer vision" target="pytorch">
+  <data key="d12">104</data>
+  <data key="d13">0.17869415807560138</data>
+  <data key="d14">0.009615384615384616</data>
+</edge>
+<edge source="computer vision" target="r">
+  <data key="d12">25</data>
+  <data key="d13">0.029585798816568046</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="computer vision" target="rust">
+  <data key="d12">3</data>
+  <data key="d13">0.009202453987730062</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="computer vision" target="scala">
+  <data key="d12">21</data>
+  <data key="d13">0.02924791086350975</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="computer vision" target="scikit-learn">
+  <data key="d12">14</data>
+  <data key="d13">0.04105571847507331</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="computer vision" target="snowflake">
+  <data key="d12">4</data>
+  <data key="d13">0.00583941605839416</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="computer vision" target="sql">
+  <data key="d12">25</data>
+  <data key="d13">0.009571209800918835</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="computer vision" target="tableau">
+  <data key="d12">4</data>
+  <data key="d13">0.004662004662004662</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="computer vision" target="tensorflow">
+  <data key="d12">57</data>
+  <data key="d13">0.08558558558558559</data>
+  <data key="d14">0.017543859649122806</data>
+</edge>
+<edge source="computer vision" target="terraform">
+  <data key="d12">2</data>
+  <data key="d13">0.0037313432835820895</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="computer vision" target="typescript">
+  <data key="d12">6</data>
+  <data key="d13">0.010291595197255575</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="databricks" target="docker">
+  <data key="d12">33</data>
+  <data key="d13">0.03670745272525028</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="databricks" target="gcp">
+  <data key="d12">131</data>
+  <data key="d13">0.09682187730968218</data>
+  <data key="d14">0.007633587786259542</data>
+</edge>
+<edge source="databricks" target="git">
+  <data key="d12">99</data>
+  <data key="d13">0.0938388625592417</data>
+  <data key="d14">0.010101010101010102</data>
+</edge>
+<edge source="databricks" target="go">
+  <data key="d12">2</data>
+  <data key="d13">0.0035149384885764497</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="databricks" target="hadoop">
+  <data key="d12">18</data>
+  <data key="d13">0.029950083194675542</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="databricks" target="hugging face">
+  <data key="d12">8</data>
+  <data key="d13">0.014134275618374558</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="databricks" target="java">
+  <data key="d12">55</data>
+  <data key="d13">0.04428341384863124</data>
+  <data key="d14">0.01818181818181818</data>
+</edge>
+<edge source="databricks" target="javascript">
+  <data key="d12">28</data>
+  <data key="d13">0.029106029106029108</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="databricks" target="keras">
+  <data key="d12">2</data>
+  <data key="d13">0.004008016032064128</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="databricks" target="kubernetes">
+  <data key="d12">60</data>
+  <data key="d13">0.0547945205479452</data>
+  <data key="d14">0.016666666666666666</data>
+</edge>
+<edge source="databricks" target="langchain">
+  <data key="d12">32</data>
+  <data key="d13">0.0547945205479452</data>
+  <data key="d14">0.03125</data>
+</edge>
+<edge source="databricks" target="linux">
+  <data key="d12">10</data>
+  <data key="d13">0.009871668311944718</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="databricks" target="llm / genai">
+  <data key="d12">175</data>
+  <data key="d13">0.08706467661691543</data>
+  <data key="d14">0.005714285714285714</data>
+</edge>
+<edge source="databricks" target="looker">
+  <data key="d12">17</data>
+  <data key="d13">0.024853801169590642</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="databricks" target="mongodb">
+  <data key="d12">11</data>
+  <data key="d13">0.02071563088512241</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="databricks" target="mysql">
+  <data key="d12">14</data>
+  <data key="d13">0.02527075812274368</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="databricks" target="nlp">
+  <data key="d12">28</data>
+  <data key="d13">0.035398230088495575</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="databricks" target="numpy">
+  <data key="d12">8</data>
+  <data key="d13">0.014571948998178506</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="databricks" target="pandas">
+  <data key="d12">24</data>
+  <data key="d13">0.04081632653061224</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="databricks" target="postgresql">
+  <data key="d12">25</data>
+  <data key="d13">0.03280839895013123</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="databricks" target="power bi">
+  <data key="d12">92</data>
+  <data key="d13">0.08966861598440545</data>
+  <data key="d14">0.010869565217391304</data>
+</edge>
+<edge source="databricks" target="python">
+  <data key="d12">335</data>
+  <data key="d13">0.09758228954267405</data>
+  <data key="d14">0.0029850746268656717</data>
+</edge>
+<edge source="databricks" target="pytorch">
+  <data key="d12">31</data>
+  <data key="d13">0.03391684901531729</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="databricks" target="r">
+  <data key="d12">35</data>
+  <data key="d13">0.031992687385740404</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="databricks" target="redis">
+  <data key="d12">3</data>
+  <data key="d13">0.005607476635514018</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="databricks" target="redshift">
+  <data key="d12">29</data>
+  <data key="d13">0.053604436229205174</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="databricks" target="rust">
+  <data key="d12">5</data>
+  <data key="d13">0.008576329331046312</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="databricks" target="scala">
+  <data key="d12">41</data>
+  <data key="d13">0.042842215256008356</data>
+  <data key="d14">0.024390243902439025</data>
+</edge>
+<edge source="databricks" target="scikit-learn">
+  <data key="d12">25</data>
+  <data key="d13">0.042444821731748725</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="databricks" target="snowflake">
+  <data key="d12">153</data>
+  <data key="d13">0.19245283018867926</data>
+  <data key="d14">0.006535947712418301</data>
+</edge>
+<edge source="databricks" target="sql">
+  <data key="d12">302</data>
+  <data key="d13">0.1164225134926754</data>
+  <data key="d14">0.0033112582781456954</data>
+</edge>
+<edge source="databricks" target="tableau">
+  <data key="d12">77</data>
+  <data key="d13">0.07375478927203065</data>
+  <data key="d14">0.012987012987012988</data>
+</edge>
+<edge source="databricks" target="tensorflow">
+  <data key="d12">25</data>
+  <data key="d13">0.02612330198537095</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="databricks" target="terraform">
+  <data key="d12">52</data>
+  <data key="d13">0.0697986577181208</data>
+  <data key="d14">0.019230769230769232</data>
+</edge>
+<edge source="databricks" target="typescript">
+  <data key="d12">22</data>
+  <data key="d13">0.026634382566585957</data>
+  <data key="d14">0.045454545454545456</data>
+</edge>
+<edge source="docker" target="gcp">
+  <data key="d12">182</data>
+  <data key="d13">0.13935681470137826</data>
+  <data key="d14">0.005494505494505495</data>
+</edge>
+<edge source="docker" target="git">
+  <data key="d12">144</data>
+  <data key="d13">0.14201183431952663</data>
+  <data key="d14">0.006944444444444444</data>
+</edge>
+<edge source="docker" target="go">
+  <data key="d12">20</data>
+  <data key="d13">0.036036036036036036</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="docker" target="hadoop">
+  <data key="d12">19</data>
+  <data key="d13">0.03145695364238411</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="docker" target="hugging face">
+  <data key="d12">15</data>
+  <data key="d13">0.02664298401420959</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="docker" target="java">
+  <data key="d12">184</data>
+  <data key="d13">0.1647269471799463</data>
+  <data key="d14">0.005434782608695652</data>
+</edge>
+<edge source="docker" target="javascript">
+  <data key="d12">136</data>
+  <data key="d13">0.1585081585081585</data>
+  <data key="d14">0.007352941176470588</data>
+</edge>
+<edge source="docker" target="keras">
+  <data key="d12">8</data>
+  <data key="d13">0.01609657947686117</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="docker" target="kubernetes">
+  <data key="d12">385</data>
+  <data key="d13">0.4974160206718346</data>
+  <data key="d14">0.0025974025974025974</data>
+</edge>
+<edge source="docker" target="langchain">
+  <data key="d12">39</data>
+  <data key="d13">0.06712564543889846</data>
+  <data key="d14">0.02564102564102564</data>
+</edge>
+<edge source="docker" target="linux">
+  <data key="d12">109</data>
+  <data key="d13">0.1187363834422658</data>
+  <data key="d14">0.009174311926605505</data>
+</edge>
+<edge source="docker" target="llm / genai">
+  <data key="d12">194</data>
+  <data key="d13">0.09724310776942356</data>
+  <data key="d14">0.005154639175257732</data>
+</edge>
+<edge source="docker" target="looker">
+  <data key="d12">1</data>
+  <data key="d13">0.0014204545454545455</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="docker" target="mongodb">
+  <data key="d12">20</data>
+  <data key="d13">0.03802281368821293</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="docker" target="mysql">
+  <data key="d12">30</data>
+  <data key="d13">0.055350553505535055</data>
+  <data key="d14">0.03333333333333333</data>
+</edge>
+<edge source="docker" target="nlp">
+  <data key="d12">31</data>
+  <data key="d13">0.039141414141414144</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="docker" target="numpy">
+  <data key="d12">6</data>
+  <data key="d13">0.010810810810810811</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="docker" target="pandas">
+  <data key="d12">14</data>
+  <data key="d13">0.023255813953488372</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="docker" target="postgresql">
+  <data key="d12">116</data>
+  <data key="d13">0.17185185185185184</data>
+  <data key="d14">0.008620689655172414</data>
+</edge>
+<edge source="docker" target="power bi">
+  <data key="d12">8</data>
+  <data key="d13">0.00718132854578097</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="docker" target="python">
+  <data key="d12">334</data>
+  <data key="d13">0.09714950552646888</data>
+  <data key="d14">0.0029940119760479044</data>
+</edge>
+<edge source="docker" target="pytorch">
+  <data key="d12">45</data>
+  <data key="d13">0.049778761061946904</data>
+  <data key="d14">0.022222222222222223</data>
+</edge>
+<edge source="docker" target="r">
+  <data key="d12">11</data>
+  <data key="d13">0.00980392156862745</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="docker" target="redis">
+  <data key="d12">27</data>
+  <data key="d13">0.05242718446601942</data>
+  <data key="d14">0.037037037037037035</data>
+</edge>
+<edge source="docker" target="redshift">
+  <data key="d12">10</data>
+  <data key="d13">0.01773049645390071</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="docker" target="rust">
+  <data key="d12">24</data>
+  <data key="d13">0.04225352112676056</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="docker" target="scala">
+  <data key="d12">60</data>
+  <data key="d13">0.06369426751592357</data>
+  <data key="d14">0.016666666666666666</data>
+</edge>
+<edge source="docker" target="scikit-learn">
+  <data key="d12">16</data>
+  <data key="d13">0.026578073089700997</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="docker" target="snowflake">
+  <data key="d12">31</data>
+  <data key="d13">0.033659066232356136</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="docker" target="sql">
+  <data key="d12">181</data>
+  <data key="d13">0.06656859139389482</data>
+  <data key="d14">0.0055248618784530384</data>
+</edge>
+<edge source="docker" target="tableau">
+  <data key="d12">7</data>
+  <data key="d13">0.006261180679785331</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="docker" target="tensorflow">
+  <data key="d12">42</data>
+  <data key="d13">0.04449152542372881</data>
+  <data key="d14">0.023809523809523808</data>
+</edge>
+<edge source="docker" target="terraform">
+  <data key="d12">97</data>
+  <data key="d13">0.1377840909090909</data>
+  <data key="d14">0.010309278350515464</data>
+</edge>
+<edge source="docker" target="typescript">
+  <data key="d12">84</data>
+  <data key="d13">0.109375</data>
+  <data key="d14">0.011904761904761904</data>
+</edge>
+<edge source="gcp" target="git">
+  <data key="d12">168</data>
+  <data key="d13">0.10894941634241245</data>
+  <data key="d14">0.005952380952380952</data>
+</edge>
+<edge source="gcp" target="go">
+  <data key="d12">35</data>
+  <data key="d13">0.03205128205128205</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="gcp" target="hadoop">
+  <data key="d12">84</data>
+  <data key="d13">0.076993583868011</data>
+  <data key="d14">0.011904761904761904</data>
+</edge>
+<edge source="gcp" target="hugging face">
+  <data key="d12">55</data>
+  <data key="d13">0.05116279069767442</data>
+  <data key="d14">0.01818181818181818</data>
+</edge>
+<edge source="gcp" target="java">
+  <data key="d12">270</data>
+  <data key="d13">0.17056222362602652</data>
+  <data key="d14">0.003703703703703704</data>
+</edge>
+<edge source="gcp" target="javascript">
+  <data key="d12">129</data>
+  <data key="d13">0.09103740296400847</data>
+  <data key="d14">0.007751937984496124</data>
+</edge>
+<edge source="gcp" target="keras">
+  <data key="d12">20</data>
+  <data key="d13">0.019286403085824494</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="gcp" target="kubernetes">
+  <data key="d12">257</data>
+  <data key="d13">0.1767537826685007</data>
+  <data key="d14">0.0038910505836575876</data>
+</edge>
+<edge source="gcp" target="langchain">
+  <data key="d12">78</data>
+  <data key="d13">0.0712979890310786</data>
+  <data key="d14">0.01282051282051282</data>
+</edge>
+<edge source="gcp" target="linux">
+  <data key="d12">100</data>
+  <data key="d13">0.0676132521974307</data>
+  <data key="d14">0.01</data>
+</edge>
+<edge source="gcp" target="llm / genai">
+  <data key="d12">396</data>
+  <data key="d13">0.16886993603411513</data>
+  <data key="d14">0.0025252525252525255</data>
+</edge>
+<edge source="gcp" target="looker">
+  <data key="d12">41</data>
+  <data key="d13">0.033717105263157895</data>
+  <data key="d14">0.024390243902439025</data>
+</edge>
+<edge source="gcp" target="mongodb">
+  <data key="d12">29</data>
+  <data key="d13">0.027128157156220765</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="gcp" target="mysql">
+  <data key="d12">35</data>
+  <data key="d13">0.03213957759412305</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="gcp" target="nlp">
+  <data key="d12">86</data>
+  <data key="d13">0.06671838634600466</data>
+  <data key="d14">0.011627906976744186</data>
+</edge>
+<edge source="gcp" target="numpy">
+  <data key="d12">15</data>
+  <data key="d13">0.01366120218579235</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="gcp" target="pandas">
+  <data key="d12">34</data>
+  <data key="d13">0.029982363315696647</data>
+  <data key="d14">0.029411764705882353</data>
+</edge>
+<edge source="gcp" target="postgresql">
+  <data key="d12">79</data>
+  <data key="d13">0.0625</data>
+  <data key="d14">0.012658227848101266</data>
+</edge>
+<edge source="gcp" target="power bi">
+  <data key="d12">59</data>
+  <data key="d13">0.03653250773993808</data>
+  <data key="d14">0.01694915254237288</data>
+</edge>
+<edge source="gcp" target="python">
+  <data key="d12">693</data>
+  <data key="d13">0.19085651335720188</data>
+  <data key="d14">0.001443001443001443</data>
+</edge>
+<edge source="gcp" target="pytorch">
+  <data key="d12">118</data>
+  <data key="d13">0.08532176428054954</data>
+  <data key="d14">0.00847457627118644</data>
+</edge>
+<edge source="gcp" target="r">
+  <data key="d12">136</data>
+  <data key="d13">0.08779857972885732</data>
+  <data key="d14">0.007352941176470588</data>
+</edge>
+<edge source="gcp" target="redis">
+  <data key="d12">20</data>
+  <data key="d13">0.0186219739292365</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="gcp" target="redshift">
+  <data key="d12">22</data>
+  <data key="d13">0.019927536231884056</data>
+  <data key="d14">0.045454545454545456</data>
+</edge>
+<edge source="gcp" target="rust">
+  <data key="d12">20</data>
+  <data key="d13">0.017793594306049824</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="gcp" target="scala">
+  <data key="d12">200</data>
+  <data key="d13">0.14771048744460857</data>
+  <data key="d14">0.005</data>
+</edge>
+<edge source="gcp" target="scikit-learn">
+  <data key="d12">59</data>
+  <data key="d13">0.05310531053105311</data>
+  <data key="d14">0.01694915254237288</data>
+</edge>
+<edge source="gcp" target="snowflake">
+  <data key="d12">112</data>
+  <data key="d13">0.08045977011494253</data>
+  <data key="d14">0.008928571428571428</data>
+</edge>
+<edge source="gcp" target="sql">
+  <data key="d12">441</data>
+  <data key="d13">0.1464629691132514</data>
+  <data key="d14">0.0022675736961451248</data>
+</edge>
+<edge source="gcp" target="tableau">
+  <data key="d12">71</data>
+  <data key="d13">0.04420921544209216</data>
+  <data key="d14">0.014084507042253521</data>
+</edge>
+<edge source="gcp" target="tensorflow">
+  <data key="d12">158</data>
+  <data key="d13">0.1144927536231884</data>
+  <data key="d14">0.006329113924050633</data>
+</edge>
+<edge source="gcp" target="terraform">
+  <data key="d12">125</data>
+  <data key="d13">0.10179153094462541</data>
+  <data key="d14">0.008</data>
+</edge>
+<edge source="gcp" target="typescript">
+  <data key="d12">77</data>
+  <data key="d13">0.058025621703089676</data>
+  <data key="d14">0.012987012987012988</data>
+</edge>
+<edge source="git" target="go">
+  <data key="d12">17</data>
+  <data key="d13">0.021794871794871794</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="git" target="hadoop">
+  <data key="d12">25</data>
+  <data key="d13">0.03048780487804878</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="git" target="hugging face">
+  <data key="d12">12</data>
+  <data key="d13">0.015228426395939087</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="git" target="java">
+  <data key="d12">146</data>
+  <data key="d13">0.10602759622367465</data>
+  <data key="d14">0.00684931506849315</data>
+</edge>
+<edge source="git" target="javascript">
+  <data key="d12">113</data>
+  <data key="d13">0.10244786944696282</data>
+  <data key="d14">0.008849557522123894</data>
+</edge>
+<edge source="git" target="keras">
+  <data key="d12">5</data>
+  <data key="d13">0.006925207756232687</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="git" target="kubernetes">
+  <data key="d12">159</data>
+  <data key="d13">0.13011456628477905</data>
+  <data key="d14">0.006289308176100629</data>
+</edge>
+<edge source="git" target="langchain">
+  <data key="d12">36</data>
+  <data key="d13">0.04466501240694789</data>
+  <data key="d14">0.027777777777777776</data>
+</edge>
+<edge source="git" target="linux">
+  <data key="d12">111</data>
+  <data key="d13">0.09753954305799649</data>
+  <data key="d14">0.009009009009009009</data>
+</edge>
+<edge source="git" target="llm / genai">
+  <data key="d12">213</data>
+  <data key="d13">0.09690627843494086</data>
+  <data key="d14">0.004694835680751174</data>
+</edge>
+<edge source="git" target="looker">
+  <data key="d12">28</data>
+  <data key="d13">0.03114571746384872</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="git" target="mongodb">
+  <data key="d12">19</data>
+  <data key="d13">0.025367156208277702</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="git" target="mysql">
+  <data key="d12">17</data>
+  <data key="d13">0.021879021879021878</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="git" target="nlp">
+  <data key="d12">26</data>
+  <data key="d13">0.02551521099116781</data>
+  <data key="d14">0.038461538461538464</data>
+</edge>
+<edge source="git" target="numpy">
+  <data key="d12">19</data>
+  <data key="d13">0.024869109947643978</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="git" target="pandas">
+  <data key="d12">31</data>
+  <data key="d13">0.03841387856257745</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="git" target="postgresql">
+  <data key="d12">73</data>
+  <data key="d13">0.07765957446808511</data>
+  <data key="d14">0.0136986301369863</data>
+</edge>
+<edge source="git" target="power bi">
+  <data key="d12">74</data>
+  <data key="d13">0.05826771653543307</data>
+  <data key="d14">0.013513513513513514</data>
+</edge>
+<edge source="git" target="python">
+  <data key="d12">472</data>
+  <data key="d13">0.13401476433844406</data>
+  <data key="d14">0.00211864406779661</data>
+</edge>
+<edge source="git" target="pytorch">
+  <data key="d12">48</data>
+  <data key="d13">0.0427426536064114</data>
+  <data key="d14">0.020833333333333332</data>
+</edge>
+<edge source="git" target="r">
+  <data key="d12">47</data>
+  <data key="d13">0.035932721712538224</data>
+  <data key="d14">0.02127659574468085</data>
+</edge>
+<edge source="git" target="redis">
+  <data key="d12">14</data>
+  <data key="d13">0.018666666666666668</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="git" target="redshift">
+  <data key="d12">26</data>
+  <data key="d13">0.033766233766233764</data>
+  <data key="d14">0.038461538461538464</data>
+</edge>
+<edge source="git" target="rust">
+  <data key="d12">12</data>
+  <data key="d13">0.014962593516209476</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="git" target="scala">
+  <data key="d12">33</data>
+  <data key="d13">0.027707808564231738</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="git" target="scikit-learn">
+  <data key="d12">33</data>
+  <data key="d13">0.040892193308550186</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="git" target="snowflake">
+  <data key="d12">98</data>
+  <data key="d13">0.09107806691449814</data>
+  <data key="d14">0.01020408163265306</data>
+</edge>
+<edge source="git" target="sql">
+  <data key="d12">333</data>
+  <data key="d13">0.11939763356041593</data>
+  <data key="d14">0.003003003003003003</data>
+</edge>
+<edge source="git" target="tableau">
+  <data key="d12">58</data>
+  <data key="d13">0.04499612102404965</data>
+  <data key="d14">0.017241379310344827</data>
+</edge>
+<edge source="git" target="tensorflow">
+  <data key="d12">40</data>
+  <data key="d13">0.03424657534246575</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="git" target="terraform">
+  <data key="d12">101</data>
+  <data key="d13">0.10954446854663774</data>
+  <data key="d14">0.009900990099009901</data>
+</edge>
+<edge source="git" target="typescript">
+  <data key="d12">83</data>
+  <data key="d13">0.08375378405650857</data>
+  <data key="d14">0.012048192771084338</data>
+</edge>
+<edge source="go" target="hugging face">
+  <data key="d12">15</data>
+  <data key="d13">0.07425742574257425</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="go" target="java">
+  <data key="d12">35</data>
+  <data key="d13">0.03867403314917127</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="go" target="javascript">
+  <data key="d12">10</data>
+  <data key="d13">0.016051364365971106</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="go" target="kubernetes">
+  <data key="d12">40</data>
+  <data key="d13">0.052770448548812667</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="go" target="langchain">
+  <data key="d12">1</data>
+  <data key="d13">0.003875968992248062</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="go" target="linux">
+  <data key="d12">16</data>
+  <data key="d13">0.024615384615384615</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="go" target="llm / genai">
+  <data key="d12">28</data>
+  <data key="d13">0.015555555555555555</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="go" target="mongodb">
+  <data key="d12">2</data>
+  <data key="d13">0.01092896174863388</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="go" target="mysql">
+  <data key="d12">4</data>
+  <data key="d13">0.01932367149758454</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="go" target="nlp">
+  <data key="d12">4</data>
+  <data key="d13">0.008733624454148471</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="go" target="postgresql">
+  <data key="d12">12</data>
+  <data key="d13">0.028708133971291867</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="go" target="python">
+  <data key="d12">82</data>
+  <data key="d13">0.024632021628116552</data>
+  <data key="d14">0.012195121951219513</data>
+</edge>
+<edge source="go" target="pytorch">
+  <data key="d12">19</data>
+  <data key="d13">0.033391915641476276</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="go" target="redis">
+  <data key="d12">6</data>
+  <data key="d13">0.03428571428571429</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="go" target="rust">
+  <data key="d12">7</data>
+  <data key="d13">0.03125</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="go" target="scala">
+  <data key="d12">14</data>
+  <data key="d13">0.022328548644338118</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="go" target="scikit-learn">
+  <data key="d12">1</data>
+  <data key="d13">0.00390625</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="go" target="sql">
+  <data key="d12">10</data>
+  <data key="d13">0.0039541320680110716</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="go" target="tableau">
+  <data key="d12">1</data>
+  <data key="d13">0.001310615989515072</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="go" target="tensorflow">
+  <data key="d12">6</data>
+  <data key="d13">0.009693053311793215</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="go" target="terraform">
+  <data key="d12">9</data>
+  <data key="d13">0.02088167053364269</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="go" target="typescript">
+  <data key="d12">7</data>
+  <data key="d13">0.014462809917355372</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="hadoop" target="hugging face">
+  <data key="d12">1</data>
+  <data key="d13">0.003787878787878788</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="hadoop" target="java">
+  <data key="d12">64</data>
+  <data key="d13">0.06926406926406926</data>
+  <data key="d14">0.015625</data>
+</edge>
+<edge source="hadoop" target="javascript">
+  <data key="d12">11</data>
+  <data key="d13">0.016417910447761194</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="hadoop" target="keras">
+  <data key="d12">3</data>
+  <data key="d13">0.015873015873015872</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="hadoop" target="kubernetes">
+  <data key="d12">24</data>
+  <data key="d13">0.029197080291970802</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="hadoop" target="langchain">
+  <data key="d12">4</data>
+  <data key="d13">0.013201320132013201</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="hadoop" target="linux">
+  <data key="d12">11</data>
+  <data key="d13">0.015647226173541962</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="hadoop" target="llm / genai">
+  <data key="d12">41</data>
+  <data key="d13">0.0223433242506812</data>
+  <data key="d14">0.024390243902439025</data>
+</edge>
+<edge source="hadoop" target="looker">
+  <data key="d12">13</data>
+  <data key="d13">0.03430079155672823</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="hadoop" target="mongodb">
+  <data key="d12">6</data>
+  <data key="d13">0.02643171806167401</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="hadoop" target="mysql">
+  <data key="d12">7</data>
+  <data key="d13">0.027777777777777776</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="hadoop" target="nlp">
+  <data key="d12">22</data>
+  <data key="d13">0.045081967213114756</data>
+  <data key="d14">0.045454545454545456</data>
+</edge>
+<edge source="hadoop" target="numpy">
+  <data key="d12">6</data>
+  <data key="d13">0.024793388429752067</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="hadoop" target="pandas">
+  <data key="d12">12</data>
+  <data key="d13">0.041237113402061855</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="hadoop" target="postgresql">
+  <data key="d12">9</data>
+  <data key="d13">0.019189765458422176</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="hadoop" target="power bi">
+  <data key="d12">14</data>
+  <data key="d13">0.01761006289308176</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="hadoop" target="python">
+  <data key="d12">120</data>
+  <data key="d13">0.03593890386343217</data>
+  <data key="d14">0.008333333333333333</data>
+</edge>
+<edge source="hadoop" target="pytorch">
+  <data key="d12">30</data>
+  <data key="d13">0.04950495049504951</data>
+  <data key="d14">0.03333333333333333</data>
+</edge>
+<edge source="hadoop" target="r">
+  <data key="d12">49</data>
+  <data key="d13">0.06355382619974059</data>
+  <data key="d14">0.02040816326530612</data>
+</edge>
+<edge source="hadoop" target="redis">
+  <data key="d12">4</data>
+  <data key="d13">0.017777777777777778</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="hadoop" target="redshift">
+  <data key="d12">9</data>
+  <data key="d13">0.03571428571428571</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="hadoop" target="scala">
+  <data key="d12">67</data>
+  <data key="d13">0.10771704180064309</data>
+  <data key="d14">0.014925373134328358</data>
+</edge>
+<edge source="hadoop" target="scikit-learn">
+  <data key="d12">24</data>
+  <data key="d13">0.08540925266903915</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="hadoop" target="snowflake">
+  <data key="d12">14</data>
+  <data key="d13">0.0224</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="hadoop" target="sql">
+  <data key="d12">117</data>
+  <data key="d13">0.04736842105263158</data>
+  <data key="d14">0.008547008547008548</data>
+</edge>
+<edge source="hadoop" target="tableau">
+  <data key="d12">25</data>
+  <data key="d13">0.03176620076238882</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="hadoop" target="tensorflow">
+  <data key="d12">44</data>
+  <data key="d13">0.06995230524642289</data>
+  <data key="d14">0.022727272727272728</data>
+</edge>
+<edge source="hadoop" target="terraform">
+  <data key="d12">1</data>
+  <data key="d13">0.002053388090349076</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="hadoop" target="typescript">
+  <data key="d12">1</data>
+  <data key="d13">0.0018587360594795538</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="hugging face" target="java">
+  <data key="d12">19</data>
+  <data key="d13">0.020562770562770564</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="hugging face" target="javascript">
+  <data key="d12">2</data>
+  <data key="d13">0.0031545741324921135</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="hugging face" target="keras">
+  <data key="d12">6</data>
+  <data key="d13">0.0425531914893617</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="hugging face" target="kubernetes">
+  <data key="d12">17</data>
+  <data key="d13">0.021683673469387755</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="hugging face" target="langchain">
+  <data key="d12">38</data>
+  <data key="d13">0.16964285714285715</data>
+  <data key="d14">0.02631578947368421</data>
+</edge>
+<edge source="hugging face" target="linux">
+  <data key="d12">1</data>
+  <data key="d13">0.0014970059880239522</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="hugging face" target="llm / genai">
+  <data key="d12">105</data>
+  <data key="d13">0.060834298957126304</data>
+  <data key="d14">0.009523809523809525</data>
+</edge>
+<edge source="hugging face" target="looker">
+  <data key="d12">1</data>
+  <data key="d13">0.002890173410404624</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="hugging face" target="mongodb">
+  <data key="d12">2</data>
+  <data key="d13">0.010752688172043012</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="hugging face" target="mysql">
+  <data key="d12">2</data>
+  <data key="d13">0.009433962264150943</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="hugging face" target="nlp">
+  <data key="d12">37</data>
+  <data key="d13">0.08644859813084112</data>
+  <data key="d14">0.02702702702702703</data>
+</edge>
+<edge source="hugging face" target="numpy">
+  <data key="d12">5</data>
+  <data key="d13">0.025252525252525252</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="hugging face" target="pandas">
+  <data key="d12">13</data>
+  <data key="d13">0.053061224489795916</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="hugging face" target="postgresql">
+  <data key="d12">4</data>
+  <data key="d13">0.009324009324009324</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="hugging face" target="python">
+  <data key="d12">94</data>
+  <data key="d13">0.028313253012048192</data>
+  <data key="d14">0.010638297872340425</data>
+</edge>
+<edge source="hugging face" target="pytorch">
+  <data key="d12">99</data>
+  <data key="d13">0.20121951219512196</data>
+  <data key="d14">0.010101010101010102</data>
+</edge>
+<edge source="hugging face" target="r">
+  <data key="d12">29</data>
+  <data key="d13">0.0388739946380697</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="hugging face" target="redis">
+  <data key="d12">2</data>
+  <data key="d13">0.01098901098901099</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="hugging face" target="redshift">
+  <data key="d12">1</data>
+  <data key="d13">0.004651162790697674</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="hugging face" target="rust">
+  <data key="d12">1</data>
+  <data key="d13">0.004291845493562232</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="hugging face" target="scala">
+  <data key="d12">42</data>
+  <data key="d13">0.06976744186046512</data>
+  <data key="d14">0.023809523809523808</data>
+</edge>
+<edge source="hugging face" target="scikit-learn">
+  <data key="d12">18</data>
+  <data key="d13">0.0743801652892562</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="hugging face" target="snowflake">
+  <data key="d12">7</data>
+  <data key="d13">0.01192504258943782</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="hugging face" target="sql">
+  <data key="d12">25</data>
+  <data key="d13">0.009932459276916964</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="hugging face" target="tableau">
+  <data key="d12">2</data>
+  <data key="d13">0.00261437908496732</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="hugging face" target="tensorflow">
+  <data key="d12">60</data>
+  <data key="d13">0.1056338028169014</data>
+  <data key="d14">0.016666666666666666</data>
+</edge>
+<edge source="hugging face" target="terraform">
+  <data key="d12">4</data>
+  <data key="d13">0.009111617312072893</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="hugging face" target="typescript">
+  <data key="d12">4</data>
+  <data key="d13">0.00816326530612245</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="java" target="javascript">
+  <data key="d12">218</data>
+  <data key="d13">0.19106047326906223</data>
+  <data key="d14">0.0045871559633027525</data>
+</edge>
+<edge source="java" target="keras">
+  <data key="d12">10</data>
+  <data key="d13">0.011627906976744186</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="java" target="kubernetes">
+  <data key="d12">245</data>
+  <data key="d13">0.19155590304925724</data>
+  <data key="d14">0.004081632653061225</data>
+</edge>
+<edge source="java" target="langchain">
+  <data key="d12">31</data>
+  <data key="d13">0.03249475890985325</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="java" target="linux">
+  <data key="d12">117</data>
+  <data key="d13">0.09176470588235294</data>
+  <data key="d14">0.008547008547008548</data>
+</edge>
+<edge source="java" target="llm / genai">
+  <data key="d12">252</data>
+  <data key="d13">0.10947002606429192</data>
+  <data key="d14">0.003968253968253968</data>
+</edge>
+<edge source="java" target="looker">
+  <data key="d12">7</data>
+  <data key="d13">0.00658513640639699</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="java" target="mongodb">
+  <data key="d12">29</data>
+  <data key="d13">0.032879818594104306</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="java" target="mysql">
+  <data key="d12">32</data>
+  <data key="d13">0.03535911602209945</data>
+  <data key="d14">0.03125</data>
+</edge>
+<edge source="java" target="nlp">
+  <data key="d12">50</data>
+  <data key="d13">0.043936731107205626</data>
+  <data key="d14">0.02</data>
+</edge>
+<edge source="java" target="numpy">
+  <data key="d12">1</data>
+  <data key="d13">0.001081081081081081</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="java" target="pandas">
+  <data key="d12">4</data>
+  <data key="d13">0.0040941658137154556</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="java" target="postgresql">
+  <data key="d12">96</data>
+  <data key="d13">0.09056603773584905</data>
+  <data key="d14">0.010416666666666666</data>
+</edge>
+<edge source="java" target="power bi">
+  <data key="d12">34</data>
+  <data key="d13">0.02339986235375086</data>
+  <data key="d14">0.029411764705882353</data>
+</edge>
+<edge source="java" target="python">
+  <data key="d12">581</data>
+  <data key="d13">0.16338582677165353</data>
+  <data key="d14">0.0017211703958691911</data>
+</edge>
+<edge source="java" target="pytorch">
+  <data key="d12">78</data>
+  <data key="d13">0.06310679611650485</data>
+  <data key="d14">0.01282051282051282</data>
+</edge>
+<edge source="java" target="r">
+  <data key="d12">81</data>
+  <data key="d13">0.05716302046577276</data>
+  <data key="d14">0.012345679012345678</data>
+</edge>
+<edge source="java" target="redis">
+  <data key="d12">25</data>
+  <data key="d13">0.02834467120181406</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="java" target="redshift">
+  <data key="d12">11</data>
+  <data key="d13">0.011853448275862068</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="java" target="rust">
+  <data key="d12">43</data>
+  <data key="d13">0.047045951859956234</data>
+  <data key="d14">0.023255813953488372</data>
+</edge>
+<edge source="java" target="scala">
+  <data key="d12">250</data>
+  <data key="d13">0.22381378692927484</data>
+  <data key="d14">0.004</data>
+</edge>
+<edge source="java" target="scikit-learn">
+  <data key="d12">21</data>
+  <data key="d13">0.02182952182952183</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="java" target="snowflake">
+  <data key="d12">46</data>
+  <data key="d13">0.03619197482297404</data>
+  <data key="d14">0.021739130434782608</data>
+</edge>
+<edge source="java" target="sql">
+  <data key="d12">348</data>
+  <data key="d13">0.11930065135413095</data>
+  <data key="d14">0.0028735632183908046</data>
+</edge>
+<edge source="java" target="tableau">
+  <data key="d12">33</data>
+  <data key="d13">0.022649279341111873</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="java" target="tensorflow">
+  <data key="d12">105</data>
+  <data key="d13">0.08426966292134831</data>
+  <data key="d14">0.009523809523809525</data>
+</edge>
+<edge source="java" target="terraform">
+  <data key="d12">55</data>
+  <data key="d13">0.04950495049504951</data>
+  <data key="d14">0.01818181818181818</data>
+</edge>
+<edge source="java" target="typescript">
+  <data key="d12">87</data>
+  <data key="d13">0.07699115044247788</data>
+  <data key="d14">0.011494252873563218</data>
+</edge>
+<edge source="javascript" target="keras">
+  <data key="d12">3</data>
+  <data key="d13">0.005357142857142857</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="javascript" target="kubernetes">
+  <data key="d12">138</data>
+  <data key="d13">0.1278962001853568</data>
+  <data key="d14">0.007246376811594203</data>
+</edge>
+<edge source="javascript" target="langchain">
+  <data key="d12">23</data>
+  <data key="d13">0.035114503816793895</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="javascript" target="linux">
+  <data key="d12">85</data>
+  <data key="d13">0.085</data>
+  <data key="d14">0.011764705882352941</data>
+</edge>
+<edge source="javascript" target="llm / genai">
+  <data key="d12">152</data>
+  <data key="d13">0.07255369928400955</data>
+  <data key="d14">0.006578947368421052</data>
+</edge>
+<edge source="javascript" target="looker">
+  <data key="d12">7</data>
+  <data key="d13">0.009259259259259259</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="javascript" target="mongodb">
+  <data key="d12">8</data>
+  <data key="d13">0.013422818791946308</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="javascript" target="mysql">
+  <data key="d12">23</data>
+  <data key="d13">0.03789126853377265</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="javascript" target="nlp">
+  <data key="d12">14</data>
+  <data key="d13">0.016147635524798153</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="javascript" target="numpy">
+  <data key="d12">3</data>
+  <data key="d13">0.00487012987012987</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="javascript" target="pandas">
+  <data key="d12">5</data>
+  <data key="d13">0.007473841554559043</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="javascript" target="postgresql">
+  <data key="d12">116</data>
+  <data key="d13">0.1582537517053206</data>
+  <data key="d14">0.008620689655172414</data>
+</edge>
+<edge source="javascript" target="power bi">
+  <data key="d12">24</data>
+  <data key="d13">0.020761245674740483</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="javascript" target="python">
+  <data key="d12">348</data>
+  <data key="d13">0.09994256174612291</data>
+  <data key="d14">0.0028735632183908046</data>
+</edge>
+<edge source="javascript" target="pytorch">
+  <data key="d12">12</data>
+  <data key="d13">0.012060301507537688</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="javascript" target="r">
+  <data key="d12">24</data>
+  <data key="d13">0.02056555269922879</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="javascript" target="redis">
+  <data key="d12">23</data>
+  <data key="d13">0.03986135181975736</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="javascript" target="redshift">
+  <data key="d12">5</data>
+  <data key="d13">0.007974481658692184</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="javascript" target="rust">
+  <data key="d12">21</data>
+  <data key="d13">0.033386327503974564</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="javascript" target="scala">
+  <data key="d12">71</data>
+  <data key="d13">0.0717896865520728</data>
+  <data key="d14">0.014084507042253521</data>
+</edge>
+<edge source="javascript" target="scikit-learn">
+  <data key="d12">7</data>
+  <data key="d13">0.01046337817638266</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="javascript" target="snowflake">
+  <data key="d12">34</data>
+  <data key="d13">0.03483606557377049</data>
+  <data key="d14">0.029411764705882353</data>
+</edge>
+<edge source="javascript" target="sql">
+  <data key="d12">219</data>
+  <data key="d13">0.07995618838992333</data>
+  <data key="d14">0.0045662100456621</data>
+</edge>
+<edge source="javascript" target="tableau">
+  <data key="d12">9</data>
+  <data key="d13">0.007666098807495741</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="javascript" target="tensorflow">
+  <data key="d12">25</data>
+  <data key="d13">0.02453385672227674</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="javascript" target="terraform">
+  <data key="d12">58</data>
+  <data key="d13">0.07240948813982521</data>
+  <data key="d14">0.017241379310344827</data>
+</edge>
+<edge source="javascript" target="typescript">
+  <data key="d12">161</data>
+  <data key="d13">0.21495327102803738</data>
+  <data key="d14">0.006211180124223602</data>
+</edge>
+<edge source="keras" target="kubernetes">
+  <data key="d12">7</data>
+  <data key="d13">0.009708737864077669</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="keras" target="langchain">
+  <data key="d12">6</data>
+  <data key="d13">0.03278688524590164</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="keras" target="linux">
+  <data key="d12">1</data>
+  <data key="d13">0.0016806722689075631</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="keras" target="llm / genai">
+  <data key="d12">28</data>
+  <data key="d13">0.016184971098265895</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="keras" target="nlp">
+  <data key="d12">23</data>
+  <data key="d13">0.06233062330623306</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="keras" target="numpy">
+  <data key="d12">5</data>
+  <data key="d13">0.04</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="keras" target="pandas">
+  <data key="d12">14</data>
+  <data key="d13">0.08187134502923976</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="keras" target="postgresql">
+  <data key="d12">4</data>
+  <data key="d13">0.011235955056179775</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="keras" target="power bi">
+  <data key="d12">2</data>
+  <data key="d13">0.002902757619738752</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="keras" target="python">
+  <data key="d12">32</data>
+  <data key="d13">0.00967059534602599</data>
+  <data key="d14">0.03125</data>
+</edge>
+<edge source="keras" target="pytorch">
+  <data key="d12">32</data>
+  <data key="d13">0.06584362139917696</data>
+  <data key="d14">0.03125</data>
+</edge>
+<edge source="keras" target="r">
+  <data key="d12">9</data>
+  <data key="d13">0.012987012987012988</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="keras" target="redshift">
+  <data key="d12">1</data>
+  <data key="d13">0.007042253521126761</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="keras" target="scala">
+  <data key="d12">8</data>
+  <data key="d13">0.014209591474245116</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="keras" target="scikit-learn">
+  <data key="d12">20</data>
+  <data key="d13">0.11976047904191617</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="keras" target="snowflake">
+  <data key="d12">3</data>
+  <data key="d13">0.005791505791505791</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="keras" target="sql">
+  <data key="d12">17</data>
+  <data key="d13">0.006933115823817292</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="keras" target="tableau">
+  <data key="d12">1</data>
+  <data key="d13">0.001443001443001443</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="keras" target="tensorflow">
+  <data key="d12">35</data>
+  <data key="d13">0.0673076923076923</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="keras" target="terraform">
+  <data key="d12">4</data>
+  <data key="d13">0.01092896174863388</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="kubernetes" target="langchain">
+  <data key="d12">43</data>
+  <data key="d13">0.05375</data>
+  <data key="d14">0.023255813953488372</data>
+</edge>
+<edge source="kubernetes" target="linux">
+  <data key="d12">167</data>
+  <data key="d13">0.15420129270544783</data>
+  <data key="d14">0.005988023952095809</data>
+</edge>
+<edge source="kubernetes" target="llm / genai">
+  <data key="d12">261</data>
+  <data key="d13">0.12133891213389121</data>
+  <data key="d14">0.0038314176245210726</data>
+</edge>
+<edge source="kubernetes" target="looker">
+  <data key="d12">1</data>
+  <data key="d13">0.0010787486515641855</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="kubernetes" target="mongodb">
+  <data key="d12">29</data>
+  <data key="d13">0.03918918918918919</data>
+  <data key="d14">0.034482758620689655</data>
+</edge>
+<edge source="kubernetes" target="mysql">
+  <data key="d12">36</data>
+  <data key="d13">0.04743083003952569</data>
+  <data key="d14">0.027777777777777776</data>
+</edge>
+<edge source="kubernetes" target="nlp">
+  <data key="d12">38</data>
+  <data key="d13">0.037698412698412696</data>
+  <data key="d14">0.02631578947368421</data>
+</edge>
+<edge source="kubernetes" target="numpy">
+  <data key="d12">6</data>
+  <data key="d13">0.007712082262210797</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="kubernetes" target="pandas">
+  <data key="d12">11</data>
+  <data key="d13">0.013285024154589372</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="kubernetes" target="postgresql">
+  <data key="d12">130</data>
+  <data key="d13">0.14705882352941177</data>
+  <data key="d14">0.007692307692307693</data>
+</edge>
+<edge source="kubernetes" target="power bi">
+  <data key="d12">4</data>
+  <data key="d13">0.002982848620432513</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="kubernetes" target="python">
+  <data key="d12">458</data>
+  <data key="d13">0.12948826689284704</data>
+  <data key="d14">0.002183406113537118</data>
+</edge>
+<edge source="kubernetes" target="pytorch">
+  <data key="d12">67</data>
+  <data key="d13">0.06063348416289593</data>
+  <data key="d14">0.014925373134328358</data>
+</edge>
+<edge source="kubernetes" target="r">
+  <data key="d12">10</data>
+  <data key="d13">0.007429420505200594</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="kubernetes" target="redis">
+  <data key="d12">30</data>
+  <data key="d13">0.04081632653061224</data>
+  <data key="d14">0.03333333333333333</data>
+</edge>
+<edge source="kubernetes" target="redshift">
+  <data key="d12">10</data>
+  <data key="d13">0.012706480304955527</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="kubernetes" target="rust">
+  <data key="d12">33</data>
+  <data key="d13">0.04219948849104859</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="kubernetes" target="scala">
+  <data key="d12">75</data>
+  <data key="d13">0.06521739130434782</data>
+  <data key="d14">0.013333333333333334</data>
+</edge>
+<edge source="kubernetes" target="scikit-learn">
+  <data key="d12">19</data>
+  <data key="d13">0.023114355231143552</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="kubernetes" target="snowflake">
+  <data key="d12">42</data>
+  <data key="d13">0.037069726390114736</data>
+  <data key="d14">0.023809523809523808</data>
+</edge>
+<edge source="kubernetes" target="sql">
+  <data key="d12">209</data>
+  <data key="d13">0.07172271791352093</data>
+  <data key="d14">0.004784688995215311</data>
+</edge>
+<edge source="kubernetes" target="tableau">
+  <data key="d12">6</data>
+  <data key="d13">0.004470938897168405</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="kubernetes" target="tensorflow">
+  <data key="d12">59</data>
+  <data key="d13">0.051304347826086956</data>
+  <data key="d14">0.01694915254237288</data>
+</edge>
+<edge source="kubernetes" target="terraform">
+  <data key="d12">163</data>
+  <data key="d13">0.18931475029036005</data>
+  <data key="d14">0.006134969325153374</data>
+</edge>
+<edge source="kubernetes" target="typescript">
+  <data key="d12">87</data>
+  <data key="d13">0.08805668016194332</data>
+  <data key="d14">0.011494252873563218</data>
+</edge>
+<edge source="langchain" target="linux">
+  <data key="d12">8</data>
+  <data key="d13">0.011379800853485065</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="langchain" target="llm / genai">
+  <data key="d12">146</data>
+  <data key="d13">0.08453966415749856</data>
+  <data key="d14">0.00684931506849315</data>
+</edge>
+<edge source="langchain" target="mongodb">
+  <data key="d12">4</data>
+  <data key="d13">0.017699115044247787</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="langchain" target="mysql">
+  <data key="d12">1</data>
+  <data key="d13">0.00392156862745098</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="langchain" target="nlp">
+  <data key="d12">36</data>
+  <data key="d13">0.07643312101910828</data>
+  <data key="d14">0.027777777777777776</data>
+</edge>
+<edge source="langchain" target="numpy">
+  <data key="d12">6</data>
+  <data key="d13">0.02510460251046025</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="langchain" target="pandas">
+  <data key="d12">15</data>
+  <data key="d13">0.05263157894736842</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="langchain" target="postgresql">
+  <data key="d12">2</data>
+  <data key="d13">0.004228329809725159</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="langchain" target="power bi">
+  <data key="d12">2</data>
+  <data key="d13">0.0024875621890547263</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="langchain" target="python">
+  <data key="d12">132</data>
+  <data key="d13">0.039711191335740074</data>
+  <data key="d14">0.007575757575757576</data>
+</edge>
+<edge source="langchain" target="pytorch">
+  <data key="d12">53</data>
+  <data key="d13">0.09137931034482759</data>
+  <data key="d14">0.018867924528301886</data>
+</edge>
+<edge source="langchain" target="r">
+  <data key="d12">16</data>
+  <data key="d13">0.019975031210986267</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="langchain" target="redshift">
+  <data key="d12">3</data>
+  <data key="d13">0.011764705882352941</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="langchain" target="rust">
+  <data key="d12">3</data>
+  <data key="d13">0.01098901098901099</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="langchain" target="scala">
+  <data key="d12">23</data>
+  <data key="d13">0.03469079939668175</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="langchain" target="scikit-learn">
+  <data key="d12">19</data>
+  <data key="d13">0.06713780918727916</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="langchain" target="snowflake">
+  <data key="d12">16</data>
+  <data key="d13">0.025806451612903226</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="langchain" target="sql">
+  <data key="d12">57</data>
+  <data key="d13">0.022556390977443608</data>
+  <data key="d14">0.017543859649122806</data>
+</edge>
+<edge source="langchain" target="tableau">
+  <data key="d12">3</data>
+  <data key="d13">0.0037220843672456576</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="langchain" target="tensorflow">
+  <data key="d12">35</data>
+  <data key="d13">0.05511811023622047</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="langchain" target="terraform">
+  <data key="d12">9</data>
+  <data key="d13">0.018907563025210083</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="langchain" target="typescript">
+  <data key="d12">15</data>
+  <data key="d13">0.028790786948176585</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="linux" target="llm / genai">
+  <data key="d12">62</data>
+  <data key="d13">0.027953110910730387</data>
+  <data key="d14">0.016129032258064516</data>
+</edge>
+<edge source="linux" target="looker">
+  <data key="d12">4</data>
+  <data key="d13">0.005050505050505051</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="linux" target="mongodb">
+  <data key="d12">6</data>
+  <data key="d13">0.009508716323296355</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="linux" target="mysql">
+  <data key="d12">12</data>
+  <data key="d13">0.018433179723502304</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="linux" target="nlp">
+  <data key="d12">3</data>
+  <data key="d13">0.003293084522502744</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="linux" target="numpy">
+  <data key="d12">6</data>
+  <data key="d13">0.009287925696594427</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="linux" target="pandas">
+  <data key="d12">7</data>
+  <data key="d13">0.01</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="linux" target="postgresql">
+  <data key="d12">65</data>
+  <data key="d13">0.0795593635250918</data>
+  <data key="d14">0.015384615384615385</data>
+</edge>
+<edge source="linux" target="power bi">
+  <data key="d12">1</data>
+  <data key="d13">0.0008250825082508251</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="linux" target="python">
+  <data key="d12">403</data>
+  <data key="d13">0.11647398843930636</data>
+  <data key="d14">0.0024813895781637717</data>
+</edge>
+<edge source="linux" target="pytorch">
+  <data key="d12">28</data>
+  <data key="d13">0.02766798418972332</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="linux" target="r">
+  <data key="d12">19</data>
+  <data key="d13">0.015767634854771784</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="linux" target="redis">
+  <data key="d12">5</data>
+  <data key="d13">0.007961783439490446</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="linux" target="redshift">
+  <data key="d12">1</data>
+  <data key="d13">0.0015060240963855422</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="linux" target="rust">
+  <data key="d12">24</data>
+  <data key="d13">0.036418816388467376</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="linux" target="scala">
+  <data key="d12">54</data>
+  <data key="d13">0.0519730510105871</data>
+  <data key="d14">0.018518518518518517</data>
+</edge>
+<edge source="linux" target="scikit-learn">
+  <data key="d12">2</data>
+  <data key="d13">0.002828854314002829</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="linux" target="snowflake">
+  <data key="d12">14</data>
+  <data key="d13">0.013605442176870748</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="linux" target="sql">
+  <data key="d12">132</data>
+  <data key="d13">0.046169989506820566</data>
+  <data key="d14">0.007575757575757576</data>
+</edge>
+<edge source="linux" target="tableau">
+  <data key="d12">8</data>
+  <data key="d13">0.006622516556291391</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="linux" target="tensorflow">
+  <data key="d12">27</data>
+  <data key="d13">0.025714285714285714</data>
+  <data key="d14">0.037037037037037035</data>
+</edge>
+<edge source="linux" target="terraform">
+  <data key="d12">121</data>
+  <data key="d13">0.1569390402075227</data>
+  <data key="d14">0.008264462809917356</data>
+</edge>
+<edge source="linux" target="typescript">
+  <data key="d12">45</data>
+  <data key="d13">0.05011135857461024</data>
+  <data key="d14">0.022222222222222223</data>
+</edge>
+<edge source="llm / genai" target="looker">
+  <data key="d12">46</data>
+  <data key="d13">0.02405857740585774</data>
+  <data key="d14">0.021739130434782608</data>
+</edge>
+<edge source="llm / genai" target="mongodb">
+  <data key="d12">17</data>
+  <data key="d13">0.009539842873176206</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="llm / genai" target="mysql">
+  <data key="d12">15</data>
+  <data key="d13">0.008287292817679558</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="llm / genai" target="nlp">
+  <data key="d12">268</data>
+  <data key="d13">0.14823008849557523</data>
+  <data key="d14">0.0037313432835820895</data>
+</edge>
+<edge source="llm / genai" target="numpy">
+  <data key="d12">44</data>
+  <data key="d13">0.024858757062146894</data>
+  <data key="d14">0.022727272727272728</data>
+</edge>
+<edge source="llm / genai" target="pandas">
+  <data key="d12">69</data>
+  <data key="d13">0.03833333333333333</data>
+  <data key="d14">0.014492753623188406</data>
+</edge>
+<edge source="llm / genai" target="postgresql">
+  <data key="d12">70</data>
+  <data key="d13">0.03546099290780142</data>
+  <data key="d14">0.014285714285714285</data>
+</edge>
+<edge source="llm / genai" target="power bi">
+  <data key="d12">80</data>
+  <data key="d13">0.034858387799564274</data>
+  <data key="d14">0.0125</data>
+</edge>
+<edge source="llm / genai" target="python">
+  <data key="d12">1054</data>
+  <data key="d13">0.2654243263661546</data>
+  <data key="d14">0.0009487666034155598</data>
+</edge>
+<edge source="llm / genai" target="pytorch">
+  <data key="d12">318</data>
+  <data key="d13">0.16878980891719744</data>
+  <data key="d14">0.0031446540880503146</data>
+</edge>
+<edge source="llm / genai" target="r">
+  <data key="d12">212</data>
+  <data key="d13">0.09751609935602576</data>
+  <data key="d14">0.0047169811320754715</data>
+</edge>
+<edge source="llm / genai" target="redis">
+  <data key="d12">21</data>
+  <data key="d13">0.011837655016910935</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="llm / genai" target="redshift">
+  <data key="d12">30</data>
+  <data key="d13">0.01669449081803005</data>
+  <data key="d14">0.03333333333333333</data>
+</edge>
+<edge source="llm / genai" target="rust">
+  <data key="d12">28</data>
+  <data key="d13">0.015410016510731976</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="llm / genai" target="scala">
+  <data key="d12">226</data>
+  <data key="d13">0.11138491867915229</data>
+  <data key="d14">0.004424778761061947</data>
+</edge>
+<edge source="llm / genai" target="scikit-learn">
+  <data key="d12">94</data>
+  <data key="d13">0.05289814293753517</data>
+  <data key="d14">0.010638297872340425</data>
+</edge>
+<edge source="llm / genai" target="snowflake">
+  <data key="d12">138</data>
+  <data key="d13">0.06676342525399129</data>
+  <data key="d14">0.007246376811594203</data>
+</edge>
+<edge source="llm / genai" target="sql">
+  <data key="d12">520</data>
+  <data key="d13">0.14313239746765757</data>
+  <data key="d14">0.0019230769230769232</data>
+</edge>
+<edge source="llm / genai" target="tableau">
+  <data key="d12">98</data>
+  <data key="d13">0.04298245614035088</data>
+  <data key="d14">0.01020408163265306</data>
+</edge>
+<edge source="llm / genai" target="tensorflow">
+  <data key="d12">320</data>
+  <data key="d13">0.16675351745700887</data>
+  <data key="d14">0.003125</data>
+</edge>
+<edge source="llm / genai" target="terraform">
+  <data key="d12">81</data>
+  <data key="d13">0.041054232133806386</data>
+  <data key="d14">0.012345679012345678</data>
+</edge>
+<edge source="llm / genai" target="typescript">
+  <data key="d12">113</data>
+  <data key="d13">0.056726907630522086</data>
+  <data key="d14">0.008849557522123894</data>
+</edge>
+<edge source="looker" target="mongodb">
+  <data key="d12">2</data>
+  <data key="d13">0.006389776357827476</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="looker" target="mysql">
+  <data key="d12">4</data>
+  <data key="d13">0.011869436201780416</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="looker" target="nlp">
+  <data key="d12">3</data>
+  <data key="d13">0.0050933786078098476</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="looker" target="numpy">
+  <data key="d12">2</data>
+  <data key="d13">0.006097560975609756</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="looker" target="pandas">
+  <data key="d12">13</data>
+  <data key="d13">0.03494623655913978</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="looker" target="postgresql">
+  <data key="d12">3</data>
+  <data key="d13">0.005385996409335727</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="looker" target="power bi">
+  <data key="d12">91</data>
+  <data key="d13">0.11375</data>
+  <data key="d14">0.01098901098901099</data>
+</edge>
+<edge source="looker" target="python">
+  <data key="d12">140</data>
+  <data key="d13">0.04116436342252279</data>
+  <data key="d14">0.007142857142857143</data>
+</edge>
+<edge source="looker" target="pytorch">
+  <data key="d12">3</data>
+  <data key="d13">0.004195804195804196</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="looker" target="r">
+  <data key="d12">48</data>
+  <data key="d13">0.05620608899297424</data>
+  <data key="d14">0.020833333333333332</data>
+</edge>
+<edge source="looker" target="redshift">
+  <data key="d12">17</data>
+  <data key="d13">0.05214723926380368</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="looker" target="rust">
+  <data key="d12">1</data>
+  <data key="d13">0.002777777777777778</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="looker" target="scala">
+  <data key="d12">9</data>
+  <data key="d13">0.011811023622047244</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="looker" target="scikit-learn">
+  <data key="d12">6</data>
+  <data key="d13">0.015748031496062992</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="looker" target="snowflake">
+  <data key="d12">57</data>
+  <data key="d13">0.0858433734939759</data>
+  <data key="d14">0.017543859649122806</data>
+</edge>
+<edge source="looker" target="sql">
+  <data key="d12">206</data>
+  <data key="d13">0.08363784003248072</data>
+  <data key="d14">0.0048543689320388345</data>
+</edge>
+<edge source="looker" target="tableau">
+  <data key="d12">180</data>
+  <data key="d13">0.25210084033613445</data>
+  <data key="d14">0.005555555555555556</data>
+</edge>
+<edge source="looker" target="tensorflow">
+  <data key="d12">3</data>
+  <data key="d13">0.003989361702127659</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="looker" target="terraform">
+  <data key="d12">5</data>
+  <data key="d13">0.008849557522123894</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="mongodb" target="mysql">
+  <data key="d12">21</data>
+  <data key="d13">0.13043478260869565</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="mongodb" target="nlp">
+  <data key="d12">2</data>
+  <data key="d13">0.004640371229698376</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="mongodb" target="pandas">
+  <data key="d12">1</data>
+  <data key="d13">0.0044444444444444444</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="mongodb" target="postgresql">
+  <data key="d12">36</data>
+  <data key="d13">0.09863013698630137</data>
+  <data key="d14">0.027777777777777776</data>
+</edge>
+<edge source="mongodb" target="power bi">
+  <data key="d12">5</data>
+  <data key="d13">0.0068775790921595595</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="mongodb" target="python">
+  <data key="d12">40</data>
+  <data key="d13">0.011968880909634948</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="mongodb" target="pytorch">
+  <data key="d12">3</data>
+  <data key="d13">0.00539568345323741</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="mongodb" target="redis">
+  <data key="d12">12</data>
+  <data key="d13">0.08571428571428572</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="mongodb" target="redshift">
+  <data key="d12">7</data>
+  <data key="d13">0.03954802259887006</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="mongodb" target="rust">
+  <data key="d12">1</data>
+  <data key="d13">0.004975124378109453</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="mongodb" target="scala">
+  <data key="d12">3</data>
+  <data key="d13">0.0049261083743842365</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="mongodb" target="snowflake">
+  <data key="d12">8</data>
+  <data key="d13">0.01444043321299639</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="mongodb" target="sql">
+  <data key="d12">46</data>
+  <data key="d13">0.018668831168831168</data>
+  <data key="d14">0.021739130434782608</data>
+</edge>
+<edge source="mongodb" target="tableau">
+  <data key="d12">4</data>
+  <data key="d13">0.005471956224350205</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="mongodb" target="tensorflow">
+  <data key="d12">3</data>
+  <data key="d13">0.00505902192242833</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="mongodb" target="terraform">
+  <data key="d12">11</data>
+  <data key="d13">0.0275</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="mongodb" target="typescript">
+  <data key="d12">11</data>
+  <data key="d13">0.024390243902439025</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="mysql" target="nlp">
+  <data key="d12">2</data>
+  <data key="d13">0.00437636761487965</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="mysql" target="pandas">
+  <data key="d12">2</data>
+  <data key="d13">0.008</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="mysql" target="postgresql">
+  <data key="d12">66</data>
+  <data key="d13">0.18282548476454294</data>
+  <data key="d14">0.015151515151515152</data>
+</edge>
+<edge source="mysql" target="power bi">
+  <data key="d12">10</data>
+  <data key="d13">0.013368983957219251</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="mysql" target="python">
+  <data key="d12">63</data>
+  <data key="d13">0.01883408071748879</data>
+  <data key="d14">0.015873015873015872</data>
+</edge>
+<edge source="mysql" target="pytorch">
+  <data key="d12">3</data>
+  <data key="d13">0.005154639175257732</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="mysql" target="r">
+  <data key="d12">3</data>
+  <data key="d13">0.0039164490861618795</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="mysql" target="redis">
+  <data key="d12">12</data>
+  <data key="d13">0.07228915662650602</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="mysql" target="redshift">
+  <data key="d12">10</data>
+  <data key="d13">0.05</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="mysql" target="rust">
+  <data key="d12">3</data>
+  <data key="d13">0.013333333333333334</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="mysql" target="scala">
+  <data key="d12">8</data>
+  <data key="d13">0.012698412698412698</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="mysql" target="scikit-learn">
+  <data key="d12">1</data>
+  <data key="d13">0.003952569169960474</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="mysql" target="snowflake">
+  <data key="d12">13</data>
+  <data key="d13">0.022608695652173914</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="mysql" target="sql">
+  <data key="d12">63</data>
+  <data key="d13">0.02547513141932875</data>
+  <data key="d14">0.015873015873015872</data>
+</edge>
+<edge source="mysql" target="tableau">
+  <data key="d12">7</data>
+  <data key="d13">0.009283819628647215</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="mysql" target="tensorflow">
+  <data key="d12">4</data>
+  <data key="d13">0.006472491909385114</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="mysql" target="terraform">
+  <data key="d12">15</data>
+  <data key="d13">0.035545023696682464</data>
+  <data key="d14">0.06666666666666667</data>
+</edge>
+<edge source="mysql" target="typescript">
+  <data key="d12">9</data>
+  <data key="d13">0.018789144050104383</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="nlp" target="numpy">
+  <data key="d12">21</data>
+  <data key="d13">0.04918032786885246</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="nlp" target="pandas">
+  <data key="d12">31</data>
+  <data key="d13">0.06567796610169492</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="nlp" target="postgresql">
+  <data key="d12">9</data>
+  <data key="d13">0.013452914798206279</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="nlp" target="power bi">
+  <data key="d12">30</data>
+  <data key="d13">0.030643513789581207</data>
+  <data key="d14">0.03333333333333333</data>
+</edge>
+<edge source="nlp" target="python">
+  <data key="d12">277</data>
+  <data key="d13">0.08190419869899468</data>
+  <data key="d14">0.0036101083032490976</data>
+</edge>
+<edge source="nlp" target="pytorch">
+  <data key="d12">130</data>
+  <data key="d13">0.18413597733711048</data>
+  <data key="d14">0.007692307692307693</data>
+</edge>
+<edge source="nlp" target="r">
+  <data key="d12">103</data>
+  <data key="d13">0.11232279171210469</data>
+  <data key="d14">0.009708737864077669</data>
+</edge>
+<edge source="nlp" target="redis">
+  <data key="d12">3</data>
+  <data key="d13">0.007042253521126761</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="nlp" target="redshift">
+  <data key="d12">3</data>
+  <data key="d13">0.006550218340611353</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="nlp" target="rust">
+  <data key="d12">2</data>
+  <data key="d13">0.0041928721174004195</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="nlp" target="scala">
+  <data key="d12">99</data>
+  <data key="d13">0.12531645569620253</data>
+  <data key="d14">0.010101010101010102</data>
+</edge>
+<edge source="nlp" target="scikit-learn">
+  <data key="d12">47</data>
+  <data key="d13">0.10262008733624454</data>
+  <data key="d14">0.02127659574468085</data>
+</edge>
+<edge source="nlp" target="snowflake">
+  <data key="d12">17</data>
+  <data key="d13">0.02068126520681265</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="nlp" target="sql">
+  <data key="d12">159</data>
+  <data key="d13">0.06050228310502283</data>
+  <data key="d14">0.006289308176100629</data>
+</edge>
+<edge source="nlp" target="tableau">
+  <data key="d12">26</data>
+  <data key="d13">0.02636916835699797</data>
+  <data key="d14">0.038461538461538464</data>
+</edge>
+<edge source="nlp" target="tensorflow">
+  <data key="d12">166</data>
+  <data key="d13">0.2347949080622348</data>
+  <data key="d14">0.006024096385542169</data>
+</edge>
+<edge source="nlp" target="terraform">
+  <data key="d12">12</data>
+  <data key="d13">0.01775147928994083</data>
+  <data key="d14">0.08333333333333333</data>
+</edge>
+<edge source="nlp" target="typescript">
+  <data key="d12">5</data>
+  <data key="d13">0.006811989100817439</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="numpy" target="pandas">
+  <data key="d12">82</data>
+  <data key="d13">0.5157232704402516</data>
+  <data key="d14">0.012195121951219513</data>
+</edge>
+<edge source="numpy" target="postgresql">
+  <data key="d12">3</data>
+  <data key="d13">0.007263922518159807</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="numpy" target="power bi">
+  <data key="d12">17</data>
+  <data key="d13">0.023287671232876714</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="numpy" target="python">
+  <data key="d12">92</data>
+  <data key="d13">0.02783661119515885</data>
+  <data key="d14">0.010869565217391304</data>
+</edge>
+<edge source="numpy" target="pytorch">
+  <data key="d12">50</data>
+  <data key="d13">0.09541984732824428</data>
+  <data key="d14">0.02</data>
+</edge>
+<edge source="numpy" target="r">
+  <data key="d12">28</data>
+  <data key="d13">0.038356164383561646</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="numpy" target="redshift">
+  <data key="d12">5</data>
+  <data key="d13">0.02577319587628866</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="numpy" target="rust">
+  <data key="d12">3</data>
+  <data key="d13">0.014018691588785047</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="numpy" target="scala">
+  <data key="d12">23</data>
+  <data key="d13">0.0380794701986755</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="numpy" target="scikit-learn">
+  <data key="d12">56</data>
+  <data key="d13">0.2994652406417112</data>
+  <data key="d14">0.017857142857142856</data>
+</edge>
+<edge source="numpy" target="snowflake">
+  <data key="d12">6</data>
+  <data key="d13">0.010507880910683012</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="numpy" target="sql">
+  <data key="d12">59</data>
+  <data key="d13">0.023925385239253853</data>
+  <data key="d14">0.01694915254237288</data>
+</edge>
+<edge source="numpy" target="tableau">
+  <data key="d12">21</data>
+  <data key="d13">0.02880658436213992</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="numpy" target="tensorflow">
+  <data key="d12">44</data>
+  <data key="d13">0.07760141093474426</data>
+  <data key="d14">0.022727272727272728</data>
+</edge>
+<edge source="numpy" target="terraform">
+  <data key="d12">1</data>
+  <data key="d13">0.002352941176470588</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="numpy" target="typescript">
+  <data key="d12">5</data>
+  <data key="d13">0.01059322033898305</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="pandas" target="postgresql">
+  <data key="d12">5</data>
+  <data key="d13">0.01072961373390558</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="pandas" target="power bi">
+  <data key="d12">24</data>
+  <data key="d13">0.030848329048843187</data>
+  <data key="d14">0.041666666666666664</data>
+</edge>
+<edge source="pandas" target="python">
+  <data key="d12">143</data>
+  <data key="d13">0.043215472952553645</data>
+  <data key="d14">0.006993006993006993</data>
+</edge>
+<edge source="pandas" target="pytorch">
+  <data key="d12">74</data>
+  <data key="d13">0.13333333333333333</data>
+  <data key="d14">0.013513513513513514</data>
+</edge>
+<edge source="pandas" target="r">
+  <data key="d12">33</data>
+  <data key="d13">0.04230769230769231</data>
+  <data key="d14">0.030303030303030304</data>
+</edge>
+<edge source="pandas" target="redis">
+  <data key="d12">1</data>
+  <data key="d13">0.004524886877828055</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="pandas" target="redshift">
+  <data key="d12">9</data>
+  <data key="d13">0.036734693877551024</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="pandas" target="rust">
+  <data key="d12">2</data>
+  <data key="d13">0.007407407407407408</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="pandas" target="scala">
+  <data key="d12">23</data>
+  <data key="d13">0.03490136570561457</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="pandas" target="scikit-learn">
+  <data key="d12">88</data>
+  <data key="d13">0.41904761904761906</data>
+  <data key="d14">0.011363636363636364</data>
+</edge>
+<edge source="pandas" target="snowflake">
+  <data key="d12">18</data>
+  <data key="d13">0.029315960912052116</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="pandas" target="sql">
+  <data key="d12">104</data>
+  <data key="d13">0.0420032310177706</data>
+  <data key="d14">0.009615384615384616</data>
+</edge>
+<edge source="pandas" target="tableau">
+  <data key="d12">30</data>
+  <data key="d13">0.03870967741935484</data>
+  <data key="d14">0.03333333333333333</data>
+</edge>
+<edge source="pandas" target="tensorflow">
+  <data key="d12">62</data>
+  <data key="d13">0.10264900662251655</data>
+  <data key="d14">0.016129032258064516</data>
+</edge>
+<edge source="pandas" target="terraform">
+  <data key="d12">4</data>
+  <data key="d13">0.008385744234800839</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="pandas" target="typescript">
+  <data key="d12">4</data>
+  <data key="d13">0.007575757575757576</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="postgresql" target="power bi">
+  <data key="d12">21</data>
+  <data key="d13">0.021966527196652718</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="postgresql" target="python">
+  <data key="d12">221</data>
+  <data key="d13">0.0648854961832061</data>
+  <data key="d14">0.004524886877828055</data>
+</edge>
+<edge source="postgresql" target="pytorch">
+  <data key="d12">8</data>
+  <data key="d13">0.010050251256281407</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="postgresql" target="r">
+  <data key="d12">2</data>
+  <data key="d13">0.002028397565922921</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="postgresql" target="redis">
+  <data key="d12">36</data>
+  <data key="d13">0.0997229916897507</data>
+  <data key="d14">0.027777777777777776</data>
+</edge>
+<edge source="postgresql" target="redshift">
+  <data key="d12">21</data>
+  <data key="d13">0.051470588235294115</data>
+  <data key="d14">0.047619047619047616</data>
+</edge>
+<edge source="postgresql" target="rust">
+  <data key="d12">14</data>
+  <data key="d13">0.03233256351039261</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="postgresql" target="scala">
+  <data key="d12">52</data>
+  <data key="d13">0.06459627329192547</data>
+  <data key="d14">0.019230769230769232</data>
+</edge>
+<edge source="postgresql" target="scikit-learn">
+  <data key="d12">5</data>
+  <data key="d13">0.010683760683760684</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="postgresql" target="snowflake">
+  <data key="d12">35</data>
+  <data key="d13">0.04533678756476684</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="postgresql" target="sql">
+  <data key="d12">194</data>
+  <data key="d13">0.07575165950800468</data>
+  <data key="d14">0.005154639175257732</data>
+</edge>
+<edge source="postgresql" target="tableau">
+  <data key="d12">11</data>
+  <data key="d13">0.011351909184726523</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="postgresql" target="tensorflow">
+  <data key="d12">9</data>
+  <data key="d13">0.010817307692307692</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="postgresql" target="terraform">
+  <data key="d12">70</data>
+  <data key="d13">0.11945392491467577</data>
+  <data key="d14">0.014285714285714285</data>
+</edge>
+<edge source="postgresql" target="typescript">
+  <data key="d12">92</data>
+  <data key="d13">0.14959349593495935</data>
+  <data key="d14">0.010869565217391304</data>
+</edge>
+<edge source="power bi" target="python">
+  <data key="d12">343</data>
+  <data key="d13">0.09488243430152143</data>
+  <data key="d14">0.0029154518950437317</data>
+</edge>
+<edge source="power bi" target="pytorch">
+  <data key="d12">13</data>
+  <data key="d13">0.011586452762923352</data>
+  <data key="d14">0.07692307692307693</data>
+</edge>
+<edge source="power bi" target="r">
+  <data key="d12">146</data>
+  <data key="d13">0.12446717817561807</data>
+  <data key="d14">0.00684931506849315</data>
+</edge>
+<edge source="power bi" target="redis">
+  <data key="d12">1</data>
+  <data key="d13">0.001375515818431912</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="power bi" target="redshift">
+  <data key="d12">25</data>
+  <data key="d13">0.034013605442176874</data>
+  <data key="d14">0.04</data>
+</edge>
+<edge source="power bi" target="scala">
+  <data key="d12">80</data>
+  <data key="d13">0.07220216606498195</data>
+  <data key="d14">0.0125</data>
+</edge>
+<edge source="power bi" target="scikit-learn">
+  <data key="d12">20</data>
+  <data key="d13">0.025510204081632654</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="power bi" target="snowflake">
+  <data key="d12">116</data>
+  <data key="d13">0.11350293542074363</data>
+  <data key="d14">0.008620689655172414</data>
+</edge>
+<edge source="power bi" target="sql">
+  <data key="d12">493</data>
+  <data key="d13">0.19012726571538757</data>
+  <data key="d14">0.002028397565922921</data>
+</edge>
+<edge source="power bi" target="tableau">
+  <data key="d12">400</data>
+  <data key="d13">0.43907793633369924</data>
+  <data key="d14">0.0025</data>
+</edge>
+<edge source="power bi" target="tensorflow">
+  <data key="d12">32</data>
+  <data key="d13">0.028070175438596492</data>
+  <data key="d14">0.03125</data>
+</edge>
+<edge source="power bi" target="terraform">
+  <data key="d12">11</data>
+  <data key="d13">0.011270491803278689</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="power bi" target="typescript">
+  <data key="d12">10</data>
+  <data key="d13">0.009727626459143969</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="python" target="pytorch">
+  <data key="d12">418</data>
+  <data key="d13">0.12414612414612415</data>
+  <data key="d14">0.0023923444976076554</data>
+</edge>
+<edge source="python" target="r">
+  <data key="d12">602</data>
+  <data key="d13">0.1787941787941788</data>
+  <data key="d14">0.0016611295681063123</data>
+</edge>
+<edge source="python" target="redis">
+  <data key="d12">40</data>
+  <data key="d13">0.011983223487118035</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="python" target="redshift">
+  <data key="d12">86</data>
+  <data key="d13">0.025872442839951864</data>
+  <data key="d14">0.011627906976744186</data>
+</edge>
+<edge source="python" target="rust">
+  <data key="d12">78</data>
+  <data key="d13">0.023283582089552238</data>
+  <data key="d14">0.01282051282051282</data>
+</edge>
+<edge source="python" target="scala">
+  <data key="d12">510</data>
+  <data key="d13">0.15324519230769232</data>
+  <data key="d14">0.00196078431372549</data>
+</edge>
+<edge source="python" target="scikit-learn">
+  <data key="d12">143</data>
+  <data key="d13">0.04318936877076412</data>
+  <data key="d14">0.006993006993006993</data>
+</edge>
+<edge source="python" target="snowflake">
+  <data key="d12">337</data>
+  <data key="d13">0.09765285424514633</data>
+  <data key="d14">0.002967359050445104</data>
+</edge>
+<edge source="python" target="sql">
+  <data key="d12">1649</data>
+  <data key="d13">0.4034744311230732</data>
+  <data key="d14">0.0006064281382656155</data>
+</edge>
+<edge source="python" target="tableau">
+  <data key="d12">382</data>
+  <data key="d13">0.10673372450405141</data>
+  <data key="d14">0.002617801047120419</data>
+</edge>
+<edge source="python" target="tensorflow">
+  <data key="d12">474</data>
+  <data key="d13">0.14157706093189965</data>
+  <data key="d14">0.002109704641350211</data>
+</edge>
+<edge source="python" target="terraform">
+  <data key="d12">263</data>
+  <data key="d13">0.07794902193242442</data>
+  <data key="d14">0.0038022813688212928</data>
+</edge>
+<edge source="python" target="typescript">
+  <data key="d12">208</data>
+  <data key="d13">0.059770114942528735</data>
+  <data key="d14">0.004807692307692308</data>
+</edge>
+<edge source="pytorch" target="r">
+  <data key="d12">91</data>
+  <data key="d13">0.08625592417061612</data>
+  <data key="d14">0.01098901098901099</data>
+</edge>
+<edge source="pytorch" target="redis">
+  <data key="d12">6</data>
+  <data key="d13">0.01092896174863388</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="pytorch" target="redshift">
+  <data key="d12">6</data>
+  <data key="d13">0.010327022375215147</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="pytorch" target="rust">
+  <data key="d12">9</data>
+  <data key="d13">0.015100671140939598</data>
+  <data key="d14">0.1111111111111111</data>
+</edge>
+<edge source="pytorch" target="scala">
+  <data key="d12">103</data>
+  <data key="d13">0.11293859649122807</data>
+  <data key="d14">0.009708737864077669</data>
+</edge>
+<edge source="pytorch" target="scikit-learn">
+  <data key="d12">111</data>
+  <data key="d13">0.21346153846153845</data>
+  <data key="d14">0.009009009009009009</data>
+</edge>
+<edge source="pytorch" target="snowflake">
+  <data key="d12">20</data>
+  <data key="d13">0.021164021164021163</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="pytorch" target="sql">
+  <data key="d12">121</data>
+  <data key="d13">0.04333810888252149</data>
+  <data key="d14">0.008264462809917356</data>
+</edge>
+<edge source="pytorch" target="tableau">
+  <data key="d12">18</data>
+  <data key="d13">0.01607142857142857</data>
+  <data key="d14">0.05555555555555555</data>
+</edge>
+<edge source="pytorch" target="tensorflow">
+  <data key="d12">322</data>
+  <data key="d13">0.4756277695716396</data>
+  <data key="d14">0.003105590062111801</data>
+</edge>
+<edge source="pytorch" target="terraform">
+  <data key="d12">17</data>
+  <data key="d13">0.02132998745294856</data>
+  <data key="d14">0.058823529411764705</data>
+</edge>
+<edge source="pytorch" target="typescript">
+  <data key="d12">4</data>
+  <data key="d13">0.004645760743321719</data>
+  <data key="d14">0.25</data>
+</edge>
+<edge source="r" target="redshift">
+  <data key="d12">7</data>
+  <data key="d13">0.009162303664921465</data>
+  <data key="d14">0.14285714285714285</data>
+</edge>
+<edge source="r" target="scala">
+  <data key="d12">301</data>
+  <data key="d13">0.3351893095768374</data>
+  <data key="d14">0.0033222591362126247</data>
+</edge>
+<edge source="r" target="scikit-learn">
+  <data key="d12">49</data>
+  <data key="d13">0.0639686684073107</data>
+  <data key="d14">0.02040816326530612</data>
+</edge>
+<edge source="r" target="snowflake">
+  <data key="d12">41</data>
+  <data key="d13">0.03700361010830325</data>
+  <data key="d14">0.024390243902439025</data>
+</edge>
+<edge source="r" target="sql">
+  <data key="d12">475</data>
+  <data key="d13">0.18115942028985507</data>
+  <data key="d14">0.002105263157894737</data>
+</edge>
+<edge source="r" target="tableau">
+  <data key="d12">164</data>
+  <data key="d13">0.14162348877374784</data>
+  <data key="d14">0.006097560975609756</data>
+</edge>
+<edge source="r" target="tensorflow">
+  <data key="d12">263</data>
+  <data key="d13">0.2858695652173913</data>
+  <data key="d14">0.0038022813688212928</data>
+</edge>
+<edge source="r" target="terraform">
+  <data key="d12">1</data>
+  <data key="d13">0.0010030090270812437</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="r" target="typescript">
+  <data key="d12">2</data>
+  <data key="d13">0.0019102196752626551</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="redis" target="redshift">
+  <data key="d12">2</data>
+  <data key="d13">0.011235955056179775</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="redis" target="rust">
+  <data key="d12">3</data>
+  <data key="d13">0.015384615384615385</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="redis" target="scala">
+  <data key="d12">3</data>
+  <data key="d13">0.0049586776859504135</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="redis" target="scikit-learn">
+  <data key="d12">1</data>
+  <data key="d13">0.004484304932735426</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="redis" target="snowflake">
+  <data key="d12">2</data>
+  <data key="d13">0.0035971223021582736</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="redis" target="sql">
+  <data key="d12">23</data>
+  <data key="d13">0.009262988320579944</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="redis" target="tableau">
+  <data key="d12">1</data>
+  <data key="d13">0.0013698630136986301</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="redis" target="tensorflow">
+  <data key="d12">6</data>
+  <data key="d13">0.010238907849829351</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="redis" target="terraform">
+  <data key="d12">10</data>
+  <data key="d13">0.02518891687657431</data>
+  <data key="d14">0.1</data>
+</edge>
+<edge source="redis" target="typescript">
+  <data key="d12">19</data>
+  <data key="d13">0.04328018223234624</data>
+  <data key="d14">0.05263157894736842</data>
+</edge>
+<edge source="redshift" target="rust">
+  <data key="d12">1</data>
+  <data key="d13">0.004366812227074236</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="redshift" target="scala">
+  <data key="d12">8</data>
+  <data key="d13">0.012658227848101266</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="redshift" target="scikit-learn">
+  <data key="d12">11</data>
+  <data key="d13">0.044897959183673466</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="redshift" target="snowflake">
+  <data key="d12">59</data>
+  <data key="d13">0.1111111111111111</data>
+  <data key="d14">0.01694915254237288</data>
+</edge>
+<edge source="redshift" target="sql">
+  <data key="d12">94</data>
+  <data key="d13">0.038461538461538464</data>
+  <data key="d14">0.010638297872340425</data>
+</edge>
+<edge source="redshift" target="tableau">
+  <data key="d12">31</data>
+  <data key="d13">0.04234972677595628</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="redshift" target="tensorflow">
+  <data key="d12">6</data>
+  <data key="d13">0.009708737864077669</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="redshift" target="terraform">
+  <data key="d12">11</data>
+  <data key="d13">0.02570093457943925</data>
+  <data key="d14">0.09090909090909091</data>
+</edge>
+<edge source="redshift" target="typescript">
+  <data key="d12">1</data>
+  <data key="d13">0.002044989775051125</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="rust" target="scala">
+  <data key="d12">16</data>
+  <data key="d13">0.024922118380062305</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="rust" target="scikit-learn">
+  <data key="d12">1</data>
+  <data key="d13">0.003663003663003663</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="rust" target="snowflake">
+  <data key="d12">1</data>
+  <data key="d13">0.0016474464579901153</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="rust" target="sql">
+  <data key="d12">14</data>
+  <data key="d13">0.0055074744295830055</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="rust" target="tableau">
+  <data key="d12">3</data>
+  <data key="d13">0.0038560411311053984</data>
+  <data key="d14">0.3333333333333333</data>
+</edge>
+<edge source="rust" target="tensorflow">
+  <data key="d12">6</data>
+  <data key="d13">0.009433962264150943</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="rust" target="terraform">
+  <data key="d12">5</data>
+  <data key="d13">0.011061946902654867</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="rust" target="typescript">
+  <data key="d12">28</data>
+  <data key="d13">0.058333333333333334</data>
+  <data key="d14">0.03571428571428571</data>
+</edge>
+<edge source="scala" target="scikit-learn">
+  <data key="d12">35</data>
+  <data key="d13">0.053929121725731895</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+<edge source="scala" target="snowflake">
+  <data key="d12">26</data>
+  <data key="d13">0.02620967741935484</data>
+  <data key="d14">0.038461538461538464</data>
+</edge>
+<edge source="scala" target="sql">
+  <data key="d12">354</data>
+  <data key="d13">0.13552833078101073</data>
+  <data key="d14">0.002824858757062147</data>
+</edge>
+<edge source="scala" target="tableau">
+  <data key="d12">80</data>
+  <data key="d13">0.07200720072007201</data>
+  <data key="d14">0.0125</data>
+</edge>
+<edge source="scala" target="tensorflow">
+  <data key="d12">266</data>
+  <data key="d13">0.3384223918575064</data>
+  <data key="d14">0.0037593984962406013</data>
+</edge>
+<edge source="scala" target="terraform">
+  <data key="d12">31</data>
+  <data key="d13">0.03708133971291866</data>
+  <data key="d14">0.03225806451612903</data>
+</edge>
+<edge source="scala" target="typescript">
+  <data key="d12">23</data>
+  <data key="d13">0.02569832402234637</data>
+  <data key="d14">0.043478260869565216</data>
+</edge>
+<edge source="scikit-learn" target="snowflake">
+  <data key="d12">20</data>
+  <data key="d13">0.03257328990228013</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="scikit-learn" target="sql">
+  <data key="d12">97</data>
+  <data key="d13">0.03903420523138833</data>
+  <data key="d14">0.010309278350515464</data>
+</edge>
+<edge source="scikit-learn" target="tableau">
+  <data key="d12">27</data>
+  <data key="d13">0.03461538461538462</data>
+  <data key="d14">0.037037037037037035</data>
+</edge>
+<edge source="scikit-learn" target="tensorflow">
+  <data key="d12">97</data>
+  <data key="d13">0.16987740805604204</data>
+  <data key="d14">0.010309278350515464</data>
+</edge>
+<edge source="scikit-learn" target="terraform">
+  <data key="d12">6</data>
+  <data key="d13">0.012578616352201259</data>
+  <data key="d14">0.16666666666666666</data>
+</edge>
+<edge source="scikit-learn" target="typescript">
+  <data key="d12">1</data>
+  <data key="d13">0.001876172607879925</data>
+  <data key="d14">1.0</data>
+</edge>
+<edge source="snowflake" target="sql">
+  <data key="d12">376</data>
+  <data key="d13">0.14803149606299212</data>
+  <data key="d14">0.0026595744680851063</data>
+</edge>
+<edge source="snowflake" target="tableau">
+  <data key="d12">133</data>
+  <data key="d13">0.13194444444444445</data>
+  <data key="d14">0.007518796992481203</data>
+</edge>
+<edge source="snowflake" target="tensorflow">
+  <data key="d12">16</data>
+  <data key="d13">0.016227180527383367</data>
+  <data key="d14">0.0625</data>
+</edge>
+<edge source="snowflake" target="terraform">
+  <data key="d12">40</data>
+  <data key="d13">0.05148005148005148</data>
+  <data key="d14">0.025</data>
+</edge>
+<edge source="snowflake" target="typescript">
+  <data key="d12">20</data>
+  <data key="d13">0.02358490566037736</data>
+  <data key="d14">0.05</data>
+</edge>
+<edge source="sql" target="tableau">
+  <data key="d12">524</data>
+  <data key="d13">0.20428849902534113</data>
+  <data key="d14">0.0019083969465648854</data>
+</edge>
+<edge source="sql" target="tensorflow">
+  <data key="d12">227</data>
+  <data key="d13">0.08336393683437385</data>
+  <data key="d14">0.004405286343612335</data>
+</edge>
+<edge source="sql" target="terraform">
+  <data key="d12">115</data>
+  <data key="d13">0.04339622641509434</data>
+  <data key="d14">0.008695652173913044</data>
+</edge>
+<edge source="sql" target="typescript">
+  <data key="d12">95</data>
+  <data key="d13">0.03491363469312753</data>
+  <data key="d14">0.010526315789473684</data>
+</edge>
+<edge source="tableau" target="tensorflow">
+  <data key="d12">32</data>
+  <data key="d13">0.02799650043744532</data>
+  <data key="d14">0.03125</data>
+</edge>
+<edge source="tableau" target="terraform">
+  <data key="d12">8</data>
+  <data key="d13">0.008146639511201629</data>
+  <data key="d14">0.125</data>
+</edge>
+<edge source="tableau" target="typescript">
+  <data key="d12">5</data>
+  <data key="d13">0.004826254826254826</data>
+  <data key="d14">0.2</data>
+</edge>
+<edge source="tensorflow" target="terraform">
+  <data key="d12">14</data>
+  <data key="d13">0.016726403823178016</data>
+  <data key="d14">0.07142857142857142</data>
+</edge>
+<edge source="tensorflow" target="typescript">
+  <data key="d12">2</data>
+  <data key="d13">0.0022222222222222222</data>
+  <data key="d14">0.5</data>
+</edge>
+<edge source="terraform" target="typescript">
+  <data key="d12">35</data>
+  <data key="d13">0.051319648093841645</data>
+  <data key="d14">0.02857142857142857</data>
+</edge>
+</graph></graphml>
