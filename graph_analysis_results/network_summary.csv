@@ -1,2 +1,2 @@
 total_jobs,jobs_with_corrected_skills,nodes,edges,density,connected_components,isolates,communities,modularity,display_edge_threshold,displayed_edges
-6869,5771,46,995,0.961352657004831,1,0,3,0.11703466165375222,111.0,199
+5939,5939,46,1035,1.0,1,0,3,0.0794301851361161,415.0,207

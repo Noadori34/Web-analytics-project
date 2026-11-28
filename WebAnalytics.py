@@ -14,8 +14,7 @@ st.set_page_config(
     layout="wide",
 )
 
-
-# Minimal styling for metric cards
+# Theme-aware styling for metric cards
 st.markdown(
     """
     <style>

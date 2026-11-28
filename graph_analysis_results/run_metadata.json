@@ -1,7 +1,7 @@
 {
   "sample": "full corrected-skill sample; no salary restriction",
   "inputs": [
-    "Datasets/combined_data.csv",
+    "Datasets/final_combined_data_tech_only.csv",
     "Datasets/job_skills_clean.csv"
   ],
   "seed": 42,
@@ -11,11 +11,11 @@
   "betweenness_distance": "1 / cooccurrence count",
   "community_method": "Louvain, weight=count, resolution=1",
   "versions": {
-    "python": "3.12.10",
-    "pandas": "2.3.3",
-    "numpy": "2.3.4",
-    "networkx": "3.4.2",
-    "matplotlib": "3.10.3"
+    "python": "3.11.4",
+    "pandas": "1.5.3",
+    "numpy": "1.26.4",
+    "networkx": "3.1",
+    "matplotlib": "3.7.1"
   },
   "validation": [
     "PASS: Phase 2 skill frequencies and percentages match.",
